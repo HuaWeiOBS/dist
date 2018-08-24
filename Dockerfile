@@ -1,7 +1,7 @@
 FROM golang:1.10-alpine
 
 ENV DISTRIBUTION_DIR /go/src/github.com/docker/distribution
-ENV DOCKER_BUILDTAGS include_s3
+ENV DOCKER_BUILDTAGS include_obs include_s3
 
 ARG GOOS=linux
 ARG GOARCH=amd64

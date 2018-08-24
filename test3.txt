@@ -1,0 +1,1571 @@
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+16:36:57.615005 IP ecs-docker.novalocal.54096 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [S], seq 3196871275, win 29200, options [mss 1460,sackOK,TS val 86696848 ecr 0,nop,wscale 7], length 0
+	0x0000:  4500 003c 81fb 4000 4006 9b1b c0a8 011d  E..<..@.@.......
+	0x0010:  8b9f d040 d350 0050 be8c 626b 0000 0000  ...@.P.P..bk....
+	0x0020:  a002 7210 1dd4 0000 0204 05b4 0402 080a  ..r.............
+	0x0030:  052a e390 0000 0000 0103 0307            .*..........
+16:36:57.617052 IP ecs-docker.novalocal.54096 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 308298787, win 229, options [nop,nop,TS val 86696850 ecr 1476866845], length 0
+	0x0000:  4500 0034 81fc 4000 4006 9b22 c0a8 011d  E..4..@.@.."....
+	0x0010:  8b9f d040 d350 0050 be8c 626c 1260 4423  ...@.P.P..bl.`D#
+	0x0020:  8010 00e5 1dcc 0000 0101 080a 052a e392  .............*..
+	0x0030:  5807 331d                                X.3.
+16:36:57.617139 IP ecs-docker.novalocal.54096 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 0:477, ack 1, win 229, options [nop,nop,TS val 86696850 ecr 1476866845], length 477: HTTP: HEAD /docker%2Fregistry%2Fv2%2Fblobs%2Fsha256%2F9d%2F9db2ca6ccae029dd195e331f4bede3d2ea2e67e0de29d6a0f8c1572e70f32fa7%2Fdata?AWSAccessKeyId=HJVJR6YY2OYQ4FJYWZA8&Expires=72001535013417&Signature=LYrqZhgZPQY8kEcJ%2BdwamS1oIro%3D HTTP/1.1
+	0x0000:  4500 0211 81fd 4000 4006 9944 c0a8 011d  E.....@.@..D....
+	0x0010:  8b9f d040 d350 0050 be8c 626c 1260 4423  ...@.P.P..bl.`D#
+	0x0020:  8018 00e5 1fa9 0000 0101 080a 052a e392  .............*..
+	0x0030:  5807 331d 4845 4144 202f 646f 636b 6572  X.3.HEAD./docker
+	0x0040:  2532 4672 6567 6973 7472 7925 3246 7632  %2Fregistry%2Fv2
+	0x0050:  2532 4662 6c6f 6273 2532 4673 6861 3235  %2Fblobs%2Fsha25
+	0x0060:  3625 3246 3964 2532 4639 6462 3263 6136  6%2F9d%2F9db2ca6
+	0x0070:  6363 6165 3032 3964 6431 3935 6533 3331  ccae029dd195e331
+	0x0080:  6634 6265 6465 3364 3265 6132 6536 3765  f4bede3d2ea2e67e
+	0x0090:  3064 6532 3964 3661 3066 3863 3135 3732  0de29d6a0f8c1572
+	0x00a0:  6537 3066 3332 6661 3725 3246 6461 7461  e70f32fa7%2Fdata
+	0x00b0:  3f41 5753 4163 6365 7373 4b65 7949 643d  ?AWSAccessKeyId=
+	0x00c0:  484a 564a 5236 5959 324f 5951 3446 4a59  HJVJR6YY2OYQ4FJY
+	0x00d0:  575a 4138 2645 7870 6972 6573 3d37 3230  WZA8&Expires=720
+	0x00e0:  3031 3533 3530 3133 3431 3726 5369 676e  01535013417&Sign
+	0x00f0:  6174 7572 653d 4c59 7271 5a68 675a 5051  ature=LYrqZhgZPQ
+	0x0100:  5938 6b45 634a 2532 4264 7761 6d53 316f  Y8kEcJ%2BdwamS1o
+	0x0110:  4972 6f25 3344 2048 5454 502f 312e 310d  Iro%3D.HTTP/1.1.
+	0x0120:  0a48 6f73 743a 2064 6f63 6b65 722d 7465  .Host:.docker-te
+	0x0130:  7374 312e 6f62 732e 636e 2d73 6f75 7468  st1.obs.cn-south
+	0x0140:  2d31 2e6d 7968 7763 6c6f 7564 732e 636f  -1.myhwclouds.co
+	0x0150:  6d3a 3830 0d0a 5573 6572 2d41 6765 6e74  m:80..User-Agent
+	0x0160:  3a20 646f 636b 6572 2f31 382e 3036 2e30  :.docker/18.06.0
+	0x0170:  2d63 6520 676f 2f67 6f31 2e31 302e 3320  -ce.go/go1.10.3.
+	0x0180:  6769 742d 636f 6d6d 6974 2f30 6666 6138  git-commit/0ffa8
+	0x0190:  3235 206b 6572 6e65 6c2f 332e 3130 2e30  25.kernel/3.10.0
+	0x01a0:  2d38 3632 2e39 2e31 2e65 6c37 2e78 3836  -862.9.1.el7.x86
+	0x01b0:  5f36 3420 6f73 2f6c 696e 7578 2061 7263  _64.os/linux.arc
+	0x01c0:  682f 616d 6436 3420 5570 7374 7265 616d  h/amd64.Upstream
+	0x01d0:  436c 6965 6e74 2844 6f63 6b65 722d 436c  Client(Docker-Cl
+	0x01e0:  6965 6e74 2f31 382e 3036 2e30 2d63 6520  ient/18.06.0-ce.
+	0x01f0:  5c28 6c69 6e75 785c 2929 0d0a 436f 6e6e  \(linux\))..Conn
+	0x0200:  6563 7469 6f6e 3a20 636c 6f73 650d 0a0d  ection:.close...
+	0x0210:  0a                                       .
+16:36:57.620003 IP ecs-docker.novalocal.54096 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 343, win 237, options [nop,nop,TS val 86696853 ecr 1476866848], length 0
+	0x0000:  4500 0034 81fe 4000 4006 9b20 c0a8 011d  E..4..@.@.......
+	0x0010:  8b9f d040 d350 0050 be8c 6449 1260 4579  ...@.P.P..dI.`Ey
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 052a e395  .............*..
+	0x0030:  5807 3320                                X.3.
+16:36:57.620047 IP ecs-docker.novalocal.54096 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [F.], seq 477, ack 344, win 237, options [nop,nop,TS val 86696853 ecr 1476866848], length 0
+	0x0000:  4500 0034 81ff 4000 4006 9b1f c0a8 011d  E..4..@.@.......
+	0x0010:  8b9f d040 d350 0050 be8c 6449 1260 457a  ...@.P.P..dI.`Ez
+	0x0020:  8011 00ed 1dcc 0000 0101 080a 052a e395  .............*..
+	0x0030:  5807 3320                                X.3.
+16:36:57.968220 IP ecs-docker.novalocal.54120 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [S], seq 388223733, win 29200, options [mss 1460,sackOK,TS val 86697201 ecr 0,nop,wscale 7], length 0
+	0x0000:  4500 003c 3604 4000 4006 e712 c0a8 011d  E..<6.@.@.......
+	0x0010:  8b9f d040 d368 0050 1723 d2f5 0000 0000  ...@.h.P.#......
+	0x0020:  a002 7210 1dd4 0000 0204 05b4 0402 080a  ..r.............
+	0x0030:  052a e4f1 0000 0000 0103 0307            .*..........
+16:36:57.971394 IP ecs-docker.novalocal.54120 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 3986989711, win 229, options [nop,nop,TS val 86697204 ecr 1476867199], length 0
+	0x0000:  4500 0034 3605 4000 4006 e719 c0a8 011d  E..46.@.@.......
+	0x0010:  8b9f d040 d368 0050 1723 d2f6 eda4 a28f  ...@.h.P.#......
+	0x0020:  8010 00e5 1dcc 0000 0101 080a 052a e4f4  .............*..
+	0x0030:  5807 347f                                X.4.
+16:36:57.971477 IP ecs-docker.novalocal.54120 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 0:477, ack 1, win 229, options [nop,nop,TS val 86697204 ecr 1476867199], length 477: HTTP: HEAD /docker%2Fregistry%2Fv2%2Fblobs%2Fsha256%2F9d%2F9db2ca6ccae029dd195e331f4bede3d2ea2e67e0de29d6a0f8c1572e70f32fa7%2Fdata?AWSAccessKeyId=HJVJR6YY2OYQ4FJYWZA8&Expires=72001535013417&Signature=LYrqZhgZPQY8kEcJ%2BdwamS1oIro%3D HTTP/1.1
+	0x0000:  4500 0211 3606 4000 4006 e53b c0a8 011d  E...6.@.@..;....
+	0x0010:  8b9f d040 d368 0050 1723 d2f6 eda4 a28f  ...@.h.P.#......
+	0x0020:  8018 00e5 1fa9 0000 0101 080a 052a e4f4  .............*..
+	0x0030:  5807 347f 4845 4144 202f 646f 636b 6572  X.4.HEAD./docker
+	0x0040:  2532 4672 6567 6973 7472 7925 3246 7632  %2Fregistry%2Fv2
+	0x0050:  2532 4662 6c6f 6273 2532 4673 6861 3235  %2Fblobs%2Fsha25
+	0x0060:  3625 3246 3964 2532 4639 6462 3263 6136  6%2F9d%2F9db2ca6
+	0x0070:  6363 6165 3032 3964 6431 3935 6533 3331  ccae029dd195e331
+	0x0080:  6634 6265 6465 3364 3265 6132 6536 3765  f4bede3d2ea2e67e
+	0x0090:  3064 6532 3964 3661 3066 3863 3135 3732  0de29d6a0f8c1572
+	0x00a0:  6537 3066 3332 6661 3725 3246 6461 7461  e70f32fa7%2Fdata
+	0x00b0:  3f41 5753 4163 6365 7373 4b65 7949 643d  ?AWSAccessKeyId=
+	0x00c0:  484a 564a 5236 5959 324f 5951 3446 4a59  HJVJR6YY2OYQ4FJY
+	0x00d0:  575a 4138 2645 7870 6972 6573 3d37 3230  WZA8&Expires=720
+	0x00e0:  3031 3533 3530 3133 3431 3726 5369 676e  01535013417&Sign
+	0x00f0:  6174 7572 653d 4c59 7271 5a68 675a 5051  ature=LYrqZhgZPQ
+	0x0100:  5938 6b45 634a 2532 4264 7761 6d53 316f  Y8kEcJ%2BdwamS1o
+	0x0110:  4972 6f25 3344 2048 5454 502f 312e 310d  Iro%3D.HTTP/1.1.
+	0x0120:  0a48 6f73 743a 2064 6f63 6b65 722d 7465  .Host:.docker-te
+	0x0130:  7374 312e 6f62 732e 636e 2d73 6f75 7468  st1.obs.cn-south
+	0x0140:  2d31 2e6d 7968 7763 6c6f 7564 732e 636f  -1.myhwclouds.co
+	0x0150:  6d3a 3830 0d0a 5573 6572 2d41 6765 6e74  m:80..User-Agent
+	0x0160:  3a20 646f 636b 6572 2f31 382e 3036 2e30  :.docker/18.06.0
+	0x0170:  2d63 6520 676f 2f67 6f31 2e31 302e 3320  -ce.go/go1.10.3.
+	0x0180:  6769 742d 636f 6d6d 6974 2f30 6666 6138  git-commit/0ffa8
+	0x0190:  3235 206b 6572 6e65 6c2f 332e 3130 2e30  25.kernel/3.10.0
+	0x01a0:  2d38 3632 2e39 2e31 2e65 6c37 2e78 3836  -862.9.1.el7.x86
+	0x01b0:  5f36 3420 6f73 2f6c 696e 7578 2061 7263  _64.os/linux.arc
+	0x01c0:  682f 616d 6436 3420 5570 7374 7265 616d  h/amd64.Upstream
+	0x01d0:  436c 6965 6e74 2844 6f63 6b65 722d 436c  Client(Docker-Cl
+	0x01e0:  6965 6e74 2f31 382e 3036 2e30 2d63 6520  ient/18.06.0-ce.
+	0x01f0:  5c28 6c69 6e75 785c 2929 0d0a 436f 6e6e  \(linux\))..Conn
+	0x0200:  6563 7469 6f6e 3a20 636c 6f73 650d 0a0d  ection:.close...
+	0x0210:  0a                                       .
+16:36:57.973945 IP ecs-docker.novalocal.54120 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 343, win 237, options [nop,nop,TS val 86697207 ecr 1476867202], length 0
+	0x0000:  4500 0034 3607 4000 4006 e717 c0a8 011d  E..46.@.@.......
+	0x0010:  8b9f d040 d368 0050 1723 d4d3 eda4 a3e5  ...@.h.P.#......
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 052a e4f7  .............*..
+	0x0030:  5807 3482                                X.4.
+16:36:57.973994 IP ecs-docker.novalocal.54120 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [F.], seq 477, ack 343, win 237, options [nop,nop,TS val 86697207 ecr 1476867202], length 0
+	0x0000:  4500 0034 3608 4000 4006 e716 c0a8 011d  E..46.@.@.......
+	0x0010:  8b9f d040 d368 0050 1723 d4d3 eda4 a3e5  ...@.h.P.#......
+	0x0020:  8011 00ed 1dcc 0000 0101 080a 052a e4f7  .............*..
+	0x0030:  5807 3482                                X.4.
+16:36:57.974557 IP ecs-docker.novalocal.54120 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 344, win 237, options [nop,nop,TS val 86697207 ecr 1476867202], length 0
+	0x0000:  4500 0034 3609 4000 4006 e715 c0a8 011d  E..46.@.@.......
+	0x0010:  8b9f d040 d368 0050 1723 d4d4 eda4 a3e6  ...@.h.P.#......
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 052a e4f7  .............*..
+	0x0030:  5807 3482                                X.4.
+17:45:46.461495 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [S], seq 1936793788, win 29200, options [mss 1460,sackOK,TS val 90825694 ecr 0,nop,wscale 7], length 0
+	0x0000:  4500 003c c362 4000 3f06 5ab4 c0a8 011d  E..<.b@.?.Z.....
+	0x0010:  8b9f d040 ede6 0050 7371 20bc 0000 0000  ...@...Psq......
+	0x0020:  a002 7210 1dd4 0000 0204 05b4 0402 080a  ..r.............
+	0x0030:  0569 e3de 0000 0000 0103 0307            .i..........
+17:45:46.466485 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 3808089453, win 229, options [nop,nop,TS val 90825699 ecr 3126354425], length 0
+	0x0000:  4500 0034 c363 4000 3f06 5abb c0a8 011d  E..4.c@.?.Z.....
+	0x0010:  8b9f d040 ede6 0050 7371 20bd e2fa d56d  ...@...Psq.....m
+	0x0020:  8010 00e5 1dcc 0000 0101 080a 0569 e3e3  .............i..
+	0x0030:  ba58 61f9                                .Xa.
+17:45:46.466733 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 0:413, ack 1, win 229, options [nop,nop,TS val 90825700 ecr 3126354425], length 413: HTTP: PUT / HTTP/1.1
+	0x0000:  4500 01d1 c364 4000 3f06 591d c0a8 011d  E....d@.?.Y.....
+	0x0010:  8b9f d040 ede6 0050 7371 20bd e2fa d56d  ...@...Psq.....m
+	0x0020:  8018 00e5 1f69 0000 0101 080a 0569 e3e4  .....i.......i..
+	0x0030:  ba58 61f9 5055 5420 2f20 4854 5450 2f31  .Xa.PUT./.HTTP/1
+	0x0040:  2e31 0d0a 486f 7374 3a20 646f 636b 6572  .1..Host:.docker
+	0x0050:  2d74 6573 7431 2e6f 6273 2e63 6e2d 736f  -test1.obs.cn-so
+	0x0060:  7574 682d 312e 6d79 6877 636c 6f75 6473  uth-1.myhwclouds
+	0x0070:  2e63 6f6d 3a38 300d 0a55 7365 722d 4167  .com:80..User-Ag
+	0x0080:  656e 743a 206f 6273 2d73 646b 2d67 6f2f  ent:.obs-sdk-go/
+	0x0090:  322e 322e 310d 0a43 6f6e 7465 6e74 2d4c  2.2.1..Content-L
+	0x00a0:  656e 6774 683a 2031 3036 0d0a 4175 7468  ength:.106..Auth
+	0x00b0:  6f72 697a 6174 696f 6e3a 2041 5753 2048  orization:.AWS.H
+	0x00c0:  4a56 4a52 3659 5932 4f59 5134 464a 5957  JVJR6YY2OYQ4FJYW
+	0x00d0:  5a41 383a 4767 3650 4e46 6876 7a4a 6f53  ZA8:Gg6PNFhvzJoS
+	0x00e0:  2f71 6658 7451 7563 7a65 576e 544b 453d  /qfXtQuczeWnTKE=
+	0x00f0:  0d0a 4461 7465 3a20 5468 752c 2032 3320  ..Date:.Thu,.23.
+	0x0100:  4175 6720 3230 3138 2030 393a 3435 3a34  Aug.2018.09:45:4
+	0x0110:  3620 474d 540d 0a78 2d61 6d7a 2d61 636c  6.GMT..x-amz-acl
+	0x0120:  3a20 7072 6976 6174 650d 0a78 2d64 6566  :.private..x-def
+	0x0130:  6175 6c74 2d73 746f 7261 6765 2d63 6c61  ault-storage-cla
+	0x0140:  7373 3a20 5354 414e 4441 5244 0d0a 4163  ss:.STANDARD..Ac
+	0x0150:  6365 7074 2d45 6e63 6f64 696e 673a 2067  cept-Encoding:.g
+	0x0160:  7a69 700d 0a0d 0a3c 4372 6561 7465 4275  zip....<CreateBu
+	0x0170:  636b 6574 436f 6e66 6967 7572 6174 696f  cketConfiguratio
+	0x0180:  6e3e 3c4c 6f63 6174 696f 6e43 6f6e 7374  n><LocationConst
+	0x0190:  7261 696e 743e 636e 2d73 6f75 7468 2d31  raint>cn-south-1
+	0x01a0:  3c2f 4c6f 6361 7469 6f6e 436f 6e73 7472  </LocationConstr
+	0x01b0:  6169 6e74 3e3c 2f43 7265 6174 6542 7563  aint></CreateBuc
+	0x01c0:  6b65 7443 6f6e 6669 6775 7261 7469 6f6e  ketConfiguration
+	0x01d0:  3e                                       >
+17:45:46.652598 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 361, win 237, options [nop,nop,TS val 90825885 ecr 3126354614], length 0
+	0x0000:  4500 0034 c365 4000 3f06 5ab9 c0a8 011d  E..4.e@.?.Z.....
+	0x0010:  8b9f d040 ede6 0050 7371 225a e2fa d6d5  ...@...Psq"Z....
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 0569 e49d  .............i..
+	0x0030:  ba58 62b6                                .Xb.
+17:45:48.746952 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 413:720, ack 361, win 237, options [nop,nop,TS val 90827980 ecr 3126354614], length 307: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2F HTTP/1.1
+	0x0000:  4500 0167 c366 4000 3f06 5985 c0a8 011d  E..g.f@.?.Y.....
+	0x0010:  8b9f d040 ede6 0050 7371 225a e2fa d6d5  ...@...Psq"Z....
+	0x0020:  8018 00ed 1eff 0000 0101 080a 0569 eccc  .............i..
+	0x0030:  ba58 62b6 4745 5420 2f3f 6465 6c69 6d69  .Xb.GET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 4620 4854 5450 2f31 2e31 0d0a  es%2F.HTTP/1.1..
+	0x0090:  486f 7374 3a20 646f 636b 6572 2d74 6573  Host:.docker-tes
+	0x00a0:  7431 2e6f 6273 2e63 6e2d 736f 7574 682d  t1.obs.cn-south-
+	0x00b0:  312e 6d79 6877 636c 6f75 6473 2e63 6f6d  1.myhwclouds.com
+	0x00c0:  3a38 300d 0a55 7365 722d 4167 656e 743a  :80..User-Agent:
+	0x00d0:  206f 6273 2d73 646b 2d67 6f2f 322e 322e  .obs-sdk-go/2.2.
+	0x00e0:  310d 0a41 7574 686f 7269 7a61 7469 6f6e  1..Authorization
+	0x00f0:  3a20 4157 5320 484a 564a 5236 5959 324f  :.AWS.HJVJR6YY2O
+	0x0100:  5951 3446 4a59 575a 4138 3a5a 5942 354c  YQ4FJYWZA8:ZYB5L
+	0x0110:  3355 7a33 5361 3330 5878 6b6d 5279 4c69  3Uz3Sa30XxkmRyLi
+	0x0120:  6253 6646 6749 3d0d 0a44 6174 653a 2054  bSfFgI=..Date:.T
+	0x0130:  6875 2c20 3233 2041 7567 2032 3031 3820  hu,.23.Aug.2018.
+	0x0140:  3039 3a34 353a 3438 2047 4d54 0d0a 4163  09:45:48.GMT..Ac
+	0x0150:  6365 7074 2d45 6e63 6f64 696e 673a 2067  cept-Encoding:.g
+	0x0160:  7a69 700d 0a0d 0a                        zip....
+17:45:48.773106 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 1164, win 250, options [nop,nop,TS val 90828006 ecr 3126356734], length 0
+	0x0000:  4500 0034 c367 4000 3f06 5ab7 c0a8 011d  E..4.g@.?.Z.....
+	0x0010:  8b9f d040 ede6 0050 7371 238d e2fa d9f8  ...@...Psq#.....
+	0x0020:  8010 00fa 1dcc 0000 0101 080a 0569 ece6  .............i..
+	0x0030:  ba58 6afe                                .Xj.
+17:45:48.773387 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 720:1017, ack 1164, win 250, options [nop,nop,TS val 90828006 ecr 3126356734], length 297: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary HTTP/1.1
+	0x0000:  4500 015d c368 4000 3f06 598d c0a8 011d  E..].h@.?.Y.....
+	0x0010:  8b9f d040 ede6 0050 7371 238d e2fa d9f8  ...@...Psq#.....
+	0x0020:  8018 00fa 1ef5 0000 0101 080a 0569 ece6  .............i..
+	0x0030:  ba58 6afe 4745 5420 2f3f 6d61 782d 6b65  .Xj.GET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4672 6570 6f73 6974 6f72 6965  v2%2Frepositorie
+	0x0070:  7325 3246 6c69 6272 6172 7920 4854 5450  s%2Flibrary.HTTP
+	0x0080:  2f31 2e31 0d0a 486f 7374 3a20 646f 636b  /1.1..Host:.dock
+	0x0090:  6572 2d74 6573 7431 2e6f 6273 2e63 6e2d  er-test1.obs.cn-
+	0x00a0:  736f 7574 682d 312e 6d79 6877 636c 6f75  south-1.myhwclou
+	0x00b0:  6473 2e63 6f6d 3a38 300d 0a55 7365 722d  ds.com:80..User-
+	0x00c0:  4167 656e 743a 206f 6273 2d73 646b 2d67  Agent:.obs-sdk-g
+	0x00d0:  6f2f 322e 322e 310d 0a41 7574 686f 7269  o/2.2.1..Authori
+	0x00e0:  7a61 7469 6f6e 3a20 4157 5320 484a 564a  zation:.AWS.HJVJ
+	0x00f0:  5236 5959 324f 5951 3446 4a59 575a 4138  R6YY2OYQ4FJYWZA8
+	0x0100:  3a5a 5942 354c 3355 7a33 5361 3330 5878  :ZYB5L3Uz3Sa30Xx
+	0x0110:  6b6d 5279 4c69 6253 6646 6749 3d0d 0a44  kmRyLibSfFgI=..D
+	0x0120:  6174 653a 2054 6875 2c20 3233 2041 7567  ate:.Thu,.23.Aug
+	0x0130:  2032 3031 3820 3039 3a34 353a 3438 2047  .2018.09:45:48.G
+	0x0140:  4d54 0d0a 4163 6365 7074 2d45 6e63 6f64  MT..Accept-Encod
+	0x0150:  696e 673a 2067 7a69 700d 0a0d 0a         ing:.gzip....
+17:45:48.793986 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 1017:1334, ack 2265, win 267, options [nop,nop,TS val 90828027 ecr 3126356755], length 317: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2F HTTP/1.1
+	0x0000:  4500 0171 c369 4000 3f06 5978 c0a8 011d  E..q.i@.?.Yx....
+	0x0010:  8b9f d040 ede6 0050 7371 24b6 e2fa de45  ...@...Psq$....E
+	0x0020:  8018 010b 1f09 0000 0101 080a 0569 ecfb  .............i..
+	0x0030:  ba58 6b13 4745 5420 2f3f 6465 6c69 6d69  .Xk.GET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 466c 6962 7261 7279 2532 4620  es%2Flibrary%2F.
+	0x0090:  4854 5450 2f31 2e31 0d0a 486f 7374 3a20  HTTP/1.1..Host:.
+	0x00a0:  646f 636b 6572 2d74 6573 7431 2e6f 6273  docker-test1.obs
+	0x00b0:  2e63 6e2d 736f 7574 682d 312e 6d79 6877  .cn-south-1.myhw
+	0x00c0:  636c 6f75 6473 2e63 6f6d 3a38 300d 0a55  clouds.com:80..U
+	0x00d0:  7365 722d 4167 656e 743a 206f 6273 2d73  ser-Agent:.obs-s
+	0x00e0:  646b 2d67 6f2f 322e 322e 310d 0a41 7574  dk-go/2.2.1..Aut
+	0x00f0:  686f 7269 7a61 7469 6f6e 3a20 4157 5320  horization:.AWS.
+	0x0100:  484a 564a 5236 5959 324f 5951 3446 4a59  HJVJR6YY2OYQ4FJY
+	0x0110:  575a 4138 3a5a 5942 354c 3355 7a33 5361  WZA8:ZYB5L3Uz3Sa
+	0x0120:  3330 5878 6b6d 5279 4c69 6253 6646 6749  30XxkmRyLibSfFgI
+	0x0130:  3d0d 0a44 6174 653a 2054 6875 2c20 3233  =..Date:.Thu,.23
+	0x0140:  2041 7567 2032 3031 3820 3039 3a34 353a  .Aug.2018.09:45:
+	0x0150:  3438 2047 4d54 0d0a 4163 6365 7074 2d45  48.GMT..Accept-E
+	0x0160:  6e63 6f64 696e 673a 2067 7a69 700d 0a0d  ncoding:.gzip...
+	0x0170:  0a                                       .
+17:45:48.813686 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 1334:1638, ack 3081, win 284, options [nop,nop,TS val 90828047 ecr 3126356775], length 304: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp HTTP/1.1
+	0x0000:  4500 0164 c36a 4000 3f06 5984 c0a8 011d  E..d.j@.?.Y.....
+	0x0010:  8b9f d040 ede6 0050 7371 25f3 e2fa e175  ...@...Psq%....u
+	0x0020:  8018 011c 1efc 0000 0101 080a 0569 ed0f  .............i..
+	0x0030:  ba58 6b27 4745 5420 2f3f 6d61 782d 6b65  .Xk'GET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4672 6570 6f73 6974 6f72 6965  v2%2Frepositorie
+	0x0070:  7325 3246 6c69 6272 6172 7925 3246 7465  s%2Flibrary%2Fte
+	0x0080:  6d70 2048 5454 502f 312e 310d 0a48 6f73  mp.HTTP/1.1..Hos
+	0x0090:  743a 2064 6f63 6b65 722d 7465 7374 312e  t:.docker-test1.
+	0x00a0:  6f62 732e 636e 2d73 6f75 7468 2d31 2e6d  obs.cn-south-1.m
+	0x00b0:  7968 7763 6c6f 7564 732e 636f 6d3a 3830  yhwclouds.com:80
+	0x00c0:  0d0a 5573 6572 2d41 6765 6e74 3a20 6f62  ..User-Agent:.ob
+	0x00d0:  732d 7364 6b2d 676f 2f32 2e32 2e31 0d0a  s-sdk-go/2.2.1..
+	0x00e0:  4175 7468 6f72 697a 6174 696f 6e3a 2041  Authorization:.A
+	0x00f0:  5753 2048 4a56 4a52 3659 5932 4f59 5134  WS.HJVJR6YY2OYQ4
+	0x0100:  464a 5957 5a41 383a 5a59 4235 4c33 557a  FJYWZA8:ZYB5L3Uz
+	0x0110:  3353 6133 3058 786b 6d52 794c 6962 5366  3Sa30XxkmRyLibSf
+	0x0120:  4667 493d 0d0a 4461 7465 3a20 5468 752c  FgI=..Date:.Thu,
+	0x0130:  2032 3320 4175 6720 3230 3138 2030 393a  .23.Aug.2018.09:
+	0x0140:  3435 3a34 3820 474d 540d 0a41 6363 6570  45:48.GMT..Accep
+	0x0150:  742d 456e 636f 6469 6e67 3a20 677a 6970  t-Encoding:.gzip
+	0x0160:  0d0a 0d0a                                ....
+17:45:48.832207 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 1638:1962, ack 4187, win 301, options [nop,nop,TS val 90828065 ecr 3126356793], length 324: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F HTTP/1.1
+	0x0000:  4500 0178 c36b 4000 3f06 596f c0a8 011d  E..x.k@.?.Yo....
+	0x0010:  8b9f d040 ede6 0050 7371 2723 e2fa e5c7  ...@...Psq'#....
+	0x0020:  8018 012d 1f10 0000 0101 080a 0569 ed21  ...-.........i.!
+	0x0030:  ba58 6b39 4745 5420 2f3f 6465 6c69 6d69  .Xk9GET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 466c 6962 7261 7279 2532 4674  es%2Flibrary%2Ft
+	0x0090:  656d 7025 3246 2048 5454 502f 312e 310d  emp%2F.HTTP/1.1.
+	0x00a0:  0a48 6f73 743a 2064 6f63 6b65 722d 7465  .Host:.docker-te
+	0x00b0:  7374 312e 6f62 732e 636e 2d73 6f75 7468  st1.obs.cn-south
+	0x00c0:  2d31 2e6d 7968 7763 6c6f 7564 732e 636f  -1.myhwclouds.co
+	0x00d0:  6d3a 3830 0d0a 5573 6572 2d41 6765 6e74  m:80..User-Agent
+	0x00e0:  3a20 6f62 732d 7364 6b2d 676f 2f32 2e32  :.obs-sdk-go/2.2
+	0x00f0:  2e31 0d0a 4175 7468 6f72 697a 6174 696f  .1..Authorizatio
+	0x0100:  6e3a 2041 5753 2048 4a56 4a52 3659 5932  n:.AWS.HJVJR6YY2
+	0x0110:  4f59 5134 464a 5957 5a41 383a 5a59 4235  OYQ4FJYWZA8:ZYB5
+	0x0120:  4c33 557a 3353 6133 3058 786b 6d52 794c  L3Uz3Sa30XxkmRyL
+	0x0130:  6962 5366 4667 493d 0d0a 4461 7465 3a20  ibSfFgI=..Date:.
+	0x0140:  5468 752c 2032 3320 4175 6720 3230 3138  Thu,.23.Aug.2018
+	0x0150:  2030 393a 3435 3a34 3820 474d 540d 0a41  .09:45:48.GMT..A
+	0x0160:  6363 6570 742d 456e 636f 6469 6e67 3a20  ccept-Encoding:.
+	0x0170:  677a 6970 0d0a 0d0a                      gzip....
+17:45:48.886752 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 1962:2276, ack 5016, win 319, options [nop,nop,TS val 90828120 ecr 3126356848], length 314: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_layers HTTP/1.1
+	0x0000:  4500 016e c36c 4000 3f06 5978 c0a8 011d  E..n.l@.?.Yx....
+	0x0010:  8b9f d040 ede6 0050 7371 2867 e2fa e904  ...@...Psq(g....
+	0x0020:  8018 013f 1f06 0000 0101 080a 0569 ed58  ...?.........i.X
+	0x0030:  ba58 6b70 4745 5420 2f3f 6d61 782d 6b65  .XkpGET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4672 6570 6f73 6974 6f72 6965  v2%2Frepositorie
+	0x0070:  7325 3246 6c69 6272 6172 7925 3246 7465  s%2Flibrary%2Fte
+	0x0080:  6d70 2532 465f 6c61 7965 7273 2048 5454  mp%2F_layers.HTT
+	0x0090:  502f 312e 310d 0a48 6f73 743a 2064 6f63  P/1.1..Host:.doc
+	0x00a0:  6b65 722d 7465 7374 312e 6f62 732e 636e  ker-test1.obs.cn
+	0x00b0:  2d73 6f75 7468 2d31 2e6d 7968 7763 6c6f  -south-1.myhwclo
+	0x00c0:  7564 732e 636f 6d3a 3830 0d0a 5573 6572  uds.com:80..User
+	0x00d0:  2d41 6765 6e74 3a20 6f62 732d 7364 6b2d  -Agent:.obs-sdk-
+	0x00e0:  676f 2f32 2e32 2e31 0d0a 4175 7468 6f72  go/2.2.1..Author
+	0x00f0:  697a 6174 696f 6e3a 2041 5753 2048 4a56  ization:.AWS.HJV
+	0x0100:  4a52 3659 5932 4f59 5134 464a 5957 5a41  JR6YY2OYQ4FJYWZA
+	0x0110:  383a 5a59 4235 4c33 557a 3353 6133 3058  8:ZYB5L3Uz3Sa30X
+	0x0120:  786b 6d52 794c 6962 5366 4667 493d 0d0a  xkmRyLibSfFgI=..
+	0x0130:  4461 7465 3a20 5468 752c 2032 3320 4175  Date:.Thu,.23.Au
+	0x0140:  6720 3230 3138 2030 393a 3435 3a34 3820  g.2018.09:45:48.
+	0x0150:  474d 540d 0a41 6363 6570 742d 456e 636f  GMT..Accept-Enco
+	0x0160:  6469 6e67 3a20 677a 6970 0d0a 0d0a       ding:.gzip....
+17:45:48.915043 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 2276:2620, ack 6130, win 336, options [nop,nop,TS val 90828148 ecr 3126356857], length 344: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_manifests%2Ftags%2F HTTP/1.1
+	0x0000:  4500 018c c36d 4000 3f06 5959 c0a8 011d  E....m@.?.YY....
+	0x0010:  8b9f d040 ede6 0050 7371 29a1 e2fa ed5e  ...@...Psq)....^
+	0x0020:  8018 0150 1f24 0000 0101 080a 0569 ed74  ...P.$.......i.t
+	0x0030:  ba58 6b79 4745 5420 2f3f 6465 6c69 6d69  .XkyGET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 466c 6962 7261 7279 2532 4674  es%2Flibrary%2Ft
+	0x0090:  656d 7025 3246 5f6d 616e 6966 6573 7473  emp%2F_manifests
+	0x00a0:  2532 4674 6167 7325 3246 2048 5454 502f  %2Ftags%2F.HTTP/
+	0x00b0:  312e 310d 0a48 6f73 743a 2064 6f63 6b65  1.1..Host:.docke
+	0x00c0:  722d 7465 7374 312e 6f62 732e 636e 2d73  r-test1.obs.cn-s
+	0x00d0:  6f75 7468 2d31 2e6d 7968 7763 6c6f 7564  outh-1.myhwcloud
+	0x00e0:  732e 636f 6d3a 3830 0d0a 5573 6572 2d41  s.com:80..User-A
+	0x00f0:  6765 6e74 3a20 6f62 732d 7364 6b2d 676f  gent:.obs-sdk-go
+	0x0100:  2f32 2e32 2e31 0d0a 4175 7468 6f72 697a  /2.2.1..Authoriz
+	0x0110:  6174 696f 6e3a 2041 5753 2048 4a56 4a52  ation:.AWS.HJVJR
+	0x0120:  3659 5932 4f59 5134 464a 5957 5a41 383a  6YY2OYQ4FJYWZA8:
+	0x0130:  5a59 4235 4c33 557a 3353 6133 3058 786b  ZYB5L3Uz3Sa30Xxk
+	0x0140:  6d52 794c 6962 5366 4667 493d 0d0a 4461  mRyLibSfFgI=..Da
+	0x0150:  7465 3a20 5468 752c 2032 3320 4175 6720  te:.Thu,.23.Aug.
+	0x0160:  3230 3138 2030 393a 3435 3a34 3820 474d  2018.09:45:48.GM
+	0x0170:  540d 0a41 6363 6570 742d 456e 636f 6469  T..Accept-Encodi
+	0x0180:  6e67 3a20 677a 6970 0d0a 0d0a            ng:.gzip....
+17:45:48.959638 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 6872, win 353, options [nop,nop,TS val 90828193 ecr 3126356882], length 0
+	0x0000:  4500 0034 c36e 4000 3f06 5ab0 c0a8 011d  E..4.n@.?.Z.....
+	0x0010:  8b9f d040 ede6 0050 7371 2af9 e2fa f044  ...@...Psq*....D
+	0x0020:  8010 0161 1dcc 0000 0101 080a 0569 eda1  ...a.........i..
+	0x0030:  ba58 6b92                                .Xk.
+17:46:48.920813 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [F.], seq 2620, ack 6872, win 353, options [nop,nop,TS val 90888154 ecr 3126356882], length 0
+	0x0000:  4500 0034 c36f 4000 3f06 5aaf c0a8 011d  E..4.o@.?.Z.....
+	0x0010:  8b9f d040 ede6 0050 7371 2af9 e2fa f044  ...@...Psq*....D
+	0x0020:  8011 0161 1dcc 0000 0101 080a 056a d7da  ...a.........j..
+	0x0030:  ba58 6b92                                .Xk.
+17:46:48.922913 IP ecs-docker.novalocal.60902 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 6873, win 353, options [nop,nop,TS val 90888156 ecr 3126416884], length 0
+	0x0000:  4500 0034 c370 4000 3f06 5aae c0a8 011d  E..4.p@.?.Z.....
+	0x0010:  8b9f d040 ede6 0050 7371 2afa e2fa f045  ...@...Psq*....E
+	0x0020:  8010 0161 1dcc 0000 0101 080a 056a d7dc  ...a.........j..
+	0x0030:  ba59 55f4                                .YU.
+17:50:19.998816 IP ecs-docker.novalocal.52808 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [S], seq 469125044, win 29200, options [mss 1460,sackOK,TS val 91099232 ecr 0,nop,wscale 7], length 0
+	0x0000:  4500 003c 57d4 4000 3f06 c642 c0a8 011d  E..<W.@.?..B....
+	0x0010:  8b9f d040 ce48 0050 1bf6 47b4 0000 0000  ...@.H.P..G.....
+	0x0020:  a002 7210 1dd4 0000 0204 05b4 0402 080a  ..r.............
+	0x0030:  056e 1060 0000 0000 0103 0307            .n.`........
+17:50:20.001246 IP ecs-docker.novalocal.52808 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 3013246325, win 229, options [nop,nop,TS val 91099234 ecr 1481269213], length 0
+	0x0000:  4500 0034 57d5 4000 3f06 c649 c0a8 011d  E..4W.@.?..I....
+	0x0010:  8b9f d040 ce48 0050 1bf6 47b5 b39a 7d75  ...@.H.P..G...}u
+	0x0020:  8010 00e5 1dcc 0000 0101 080a 056e 1062  .............n.b
+	0x0030:  584a 5fdd                                XJ_.
+17:50:20.001478 IP ecs-docker.novalocal.52808 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 0:413, ack 1, win 229, options [nop,nop,TS val 91099234 ecr 1481269213], length 413: HTTP: PUT / HTTP/1.1
+	0x0000:  4500 01d1 57d6 4000 3f06 c4ab c0a8 011d  E...W.@.?.......
+	0x0010:  8b9f d040 ce48 0050 1bf6 47b5 b39a 7d75  ...@.H.P..G...}u
+	0x0020:  8018 00e5 1f69 0000 0101 080a 056e 1062  .....i.......n.b
+	0x0030:  584a 5fdd 5055 5420 2f20 4854 5450 2f31  XJ_.PUT./.HTTP/1
+	0x0040:  2e31 0d0a 486f 7374 3a20 646f 636b 6572  .1..Host:.docker
+	0x0050:  2d74 6573 7431 2e6f 6273 2e63 6e2d 736f  -test1.obs.cn-so
+	0x0060:  7574 682d 312e 6d79 6877 636c 6f75 6473  uth-1.myhwclouds
+	0x0070:  2e63 6f6d 3a38 300d 0a55 7365 722d 4167  .com:80..User-Ag
+	0x0080:  656e 743a 206f 6273 2d73 646b 2d67 6f2f  ent:.obs-sdk-go/
+	0x0090:  322e 322e 310d 0a43 6f6e 7465 6e74 2d4c  2.2.1..Content-L
+	0x00a0:  656e 6774 683a 2031 3036 0d0a 4175 7468  ength:.106..Auth
+	0x00b0:  6f72 697a 6174 696f 6e3a 2041 5753 2048  orization:.AWS.H
+	0x00c0:  4a56 4a52 3659 5932 4f59 5134 464a 5957  JVJR6YY2OYQ4FJYW
+	0x00d0:  5a41 383a 7852 704d 785a 6b63 5471 6171  ZA8:xRpMxZkcTqaq
+	0x00e0:  4b41 4d42 4b50 5634 336b 5266 6835 493d  KAMBKPV43kRfh5I=
+	0x00f0:  0d0a 4461 7465 3a20 5468 752c 2032 3320  ..Date:.Thu,.23.
+	0x0100:  4175 6720 3230 3138 2030 393a 3530 3a31  Aug.2018.09:50:1
+	0x0110:  3920 474d 540d 0a78 2d61 6d7a 2d61 636c  9.GMT..x-amz-acl
+	0x0120:  3a20 7072 6976 6174 650d 0a78 2d64 6566  :.private..x-def
+	0x0130:  6175 6c74 2d73 746f 7261 6765 2d63 6c61  ault-storage-cla
+	0x0140:  7373 3a20 5354 414e 4441 5244 0d0a 4163  ss:.STANDARD..Ac
+	0x0150:  6365 7074 2d45 6e63 6f64 696e 673a 2067  cept-Encoding:.g
+	0x0160:  7a69 700d 0a0d 0a3c 4372 6561 7465 4275  zip....<CreateBu
+	0x0170:  636b 6574 436f 6e66 6967 7572 6174 696f  cketConfiguratio
+	0x0180:  6e3e 3c4c 6f63 6174 696f 6e43 6f6e 7374  n><LocationConst
+	0x0190:  7261 696e 743e 636e 2d73 6f75 7468 2d31  raint>cn-south-1
+	0x01a0:  3c2f 4c6f 6361 7469 6f6e 436f 6e73 7472  </LocationConstr
+	0x01b0:  6169 6e74 3e3c 2f43 7265 6174 6542 7563  aint></CreateBuc
+	0x01c0:  6b65 7443 6f6e 6669 6775 7261 7469 6f6e  ketConfiguration
+	0x01d0:  3e                                       >
+17:50:20.064148 IP ecs-docker.novalocal.52808 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 361, win 237, options [nop,nop,TS val 91099297 ecr 1481269276], length 0
+	0x0000:  4500 0034 57d7 4000 3f06 c647 c0a8 011d  E..4W.@.?..G....
+	0x0010:  8b9f d040 ce48 0050 1bf6 4952 b39a 7edd  ...@.H.P..IR..~.
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 056e 10a1  .............n..
+	0x0030:  584a 601c                                XJ`.
+17:51:20.065958 IP ecs-docker.novalocal.52808 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [F.], seq 413, ack 361, win 237, options [nop,nop,TS val 91159299 ecr 1481269276], length 0
+	0x0000:  4500 0034 57d8 4000 3f06 c646 c0a8 011d  E..4W.@.?..F....
+	0x0010:  8b9f d040 ce48 0050 1bf6 4952 b39a 7edd  ...@.H.P..IR..~.
+	0x0020:  8011 00ed 1dcc 0000 0101 080a 056e fb03  .............n..
+	0x0030:  584a 601c                                XJ`.
+17:51:20.067859 IP ecs-docker.novalocal.52808 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 362, win 237, options [nop,nop,TS val 91159301 ecr 1481329280], length 0
+	0x0000:  4500 0034 57d9 4000 3f06 c645 c0a8 011d  E..4W.@.?..E....
+	0x0010:  8b9f d040 ce48 0050 1bf6 4953 b39a 7ede  ...@.H.P..IS..~.
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 056e fb05  .............n..
+	0x0030:  584b 4a80                                XKJ.
+17:55:19.060104 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [S], seq 3099119371, win 29200, options [mss 1460,sackOK,TS val 91398293 ecr 0,nop,wscale 7], length 0
+	0x0000:  4500 003c 6f9e 4000 3f06 ae78 c0a8 011d  E..<o.@.?..x....
+	0x0010:  8b9f d040 80bc 0050 b8b8 cf0b 0000 0000  ...@...P........
+	0x0020:  a002 7210 1dd4 0000 0204 05b4 0402 080a  ..r.............
+	0x0030:  0572 a095 0000 0000 0103 0307            .r..........
+17:55:19.062149 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 1120225076, win 229, options [nop,nop,TS val 91398295 ecr 3126927021], length 0
+	0x0000:  4500 0034 6f9f 4000 3f06 ae7f c0a8 011d  E..4o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 cf0c 42c5 4734  ...@...P....B.G4
+	0x0020:  8010 00e5 1dcc 0000 0101 080a 0572 a097  .............r..
+	0x0030:  ba61 1ead                                .a..
+17:55:19.062320 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 0:413, ack 1, win 229, options [nop,nop,TS val 91398295 ecr 3126927021], length 413: HTTP: PUT / HTTP/1.1
+	0x0000:  4500 01d1 6fa0 4000 3f06 ace1 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 cf0c 42c5 4734  ...@...P....B.G4
+	0x0020:  8018 00e5 1f69 0000 0101 080a 0572 a097  .....i.......r..
+	0x0030:  ba61 1ead 5055 5420 2f20 4854 5450 2f31  .a..PUT./.HTTP/1
+	0x0040:  2e31 0d0a 486f 7374 3a20 646f 636b 6572  .1..Host:.docker
+	0x0050:  2d74 6573 7431 2e6f 6273 2e63 6e2d 736f  -test1.obs.cn-so
+	0x0060:  7574 682d 312e 6d79 6877 636c 6f75 6473  uth-1.myhwclouds
+	0x0070:  2e63 6f6d 3a38 300d 0a55 7365 722d 4167  .com:80..User-Ag
+	0x0080:  656e 743a 206f 6273 2d73 646b 2d67 6f2f  ent:.obs-sdk-go/
+	0x0090:  322e 322e 310d 0a43 6f6e 7465 6e74 2d4c  2.2.1..Content-L
+	0x00a0:  656e 6774 683a 2031 3036 0d0a 4175 7468  ength:.106..Auth
+	0x00b0:  6f72 697a 6174 696f 6e3a 2041 5753 2048  orization:.AWS.H
+	0x00c0:  4a56 4a52 3659 5932 4f59 5134 464a 5957  JVJR6YY2OYQ4FJYW
+	0x00d0:  5a41 383a 7470 5234 644c 6d39 3153 4c51  ZA8:tpR4dLm91SLQ
+	0x00e0:  3344 6c34 3654 6438 7747 3350 6251 773d  3Dl46Td8wG3PbQw=
+	0x00f0:  0d0a 4461 7465 3a20 5468 752c 2032 3320  ..Date:.Thu,.23.
+	0x0100:  4175 6720 3230 3138 2030 393a 3535 3a31  Aug.2018.09:55:1
+	0x0110:  3920 474d 540d 0a78 2d61 6d7a 2d61 636c  9.GMT..x-amz-acl
+	0x0120:  3a20 7072 6976 6174 650d 0a78 2d64 6566  :.private..x-def
+	0x0130:  6175 6c74 2d73 746f 7261 6765 2d63 6c61  ault-storage-cla
+	0x0140:  7373 3a20 5354 414e 4441 5244 0d0a 4163  ss:.STANDARD..Ac
+	0x0150:  6365 7074 2d45 6e63 6f64 696e 673a 2067  cept-Encoding:.g
+	0x0160:  7a69 700d 0a0d 0a3c 4372 6561 7465 4275  zip....<CreateBu
+	0x0170:  636b 6574 436f 6e66 6967 7572 6174 696f  cketConfiguratio
+	0x0180:  6e3e 3c4c 6f63 6174 696f 6e43 6f6e 7374  n><LocationConst
+	0x0190:  7261 696e 743e 636e 2d73 6f75 7468 2d31  raint>cn-south-1
+	0x01a0:  3c2f 4c6f 6361 7469 6f6e 436f 6e73 7472  </LocationConstr
+	0x01b0:  6169 6e74 3e3c 2f43 7265 6174 6542 7563  aint></CreateBuc
+	0x01c0:  6b65 7443 6f6e 6669 6775 7261 7469 6f6e  ketConfiguration
+	0x01d0:  3e                                       >
+17:55:19.286252 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 361, win 237, options [nop,nop,TS val 91398519 ecr 3126927246], length 0
+	0x0000:  4500 0034 6fa1 4000 3f06 ae7d c0a8 011d  E..4o.@.?..}....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d0a9 42c5 489c  ...@...P....B.H.
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 0572 a177  .............r.w
+	0x0030:  ba61 1f8e                                .a..
+17:55:23.370973 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 413:720, ack 361, win 237, options [nop,nop,TS val 91402604 ecr 3126927246], length 307: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2F HTTP/1.1
+	0x0000:  4500 0167 6fa2 4000 3f06 ad49 c0a8 011d  E..go.@.?..I....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d0a9 42c5 489c  ...@...P....B.H.
+	0x0020:  8018 00ed 1eff 0000 0101 080a 0572 b16c  .............r.l
+	0x0030:  ba61 1f8e 4745 5420 2f3f 6465 6c69 6d69  .a..GET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 4620 4854 5450 2f31 2e31 0d0a  es%2F.HTTP/1.1..
+	0x0090:  486f 7374 3a20 646f 636b 6572 2d74 6573  Host:.docker-tes
+	0x00a0:  7431 2e6f 6273 2e63 6e2d 736f 7574 682d  t1.obs.cn-south-
+	0x00b0:  312e 6d79 6877 636c 6f75 6473 2e63 6f6d  1.myhwclouds.com
+	0x00c0:  3a38 300d 0a55 7365 722d 4167 656e 743a  :80..User-Agent:
+	0x00d0:  206f 6273 2d73 646b 2d67 6f2f 322e 322e  .obs-sdk-go/2.2.
+	0x00e0:  310d 0a41 7574 686f 7269 7a61 7469 6f6e  1..Authorization
+	0x00f0:  3a20 4157 5320 484a 564a 5236 5959 324f  :.AWS.HJVJR6YY2O
+	0x0100:  5951 3446 4a59 575a 4138 3a79 6a43 544a  YQ4FJYWZA8:yjCTJ
+	0x0110:  5247 4363 594a 6261 6475 4844 5744 5744  RGCcYJbaduHDWDWD
+	0x0120:  4470 7741 3955 3d0d 0a44 6174 653a 2054  DpwA9U=..Date:.T
+	0x0130:  6875 2c20 3233 2041 7567 2032 3031 3820  hu,.23.Aug.2018.
+	0x0140:  3039 3a35 353a 3233 2047 4d54 0d0a 4163  09:55:23.GMT..Ac
+	0x0150:  6365 7074 2d45 6e63 6f64 696e 673a 2067  cept-Encoding:.g
+	0x0160:  7a69 700d 0a0d 0a                        zip....
+17:55:23.393246 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 1164, win 250, options [nop,nop,TS val 91402626 ecr 3126931353], length 0
+	0x0000:  4500 0034 6fa3 4000 3f06 ae7b c0a8 011d  E..4o.@.?..{....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d1dc 42c5 4bbf  ...@...P....B.K.
+	0x0020:  8010 00fa 1dcc 0000 0101 080a 0572 b182  .............r..
+	0x0030:  ba61 2f99                                .a/.
+17:55:23.393509 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 720:1017, ack 1164, win 250, options [nop,nop,TS val 91402626 ecr 3126931353], length 297: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary HTTP/1.1
+	0x0000:  4500 015d 6fa4 4000 3f06 ad51 c0a8 011d  E..]o.@.?..Q....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d1dc 42c5 4bbf  ...@...P....B.K.
+	0x0020:  8018 00fa 1ef5 0000 0101 080a 0572 b182  .............r..
+	0x0030:  ba61 2f99 4745 5420 2f3f 6d61 782d 6b65  .a/.GET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4672 6570 6f73 6974 6f72 6965  v2%2Frepositorie
+	0x0070:  7325 3246 6c69 6272 6172 7920 4854 5450  s%2Flibrary.HTTP
+	0x0080:  2f31 2e31 0d0a 486f 7374 3a20 646f 636b  /1.1..Host:.dock
+	0x0090:  6572 2d74 6573 7431 2e6f 6273 2e63 6e2d  er-test1.obs.cn-
+	0x00a0:  736f 7574 682d 312e 6d79 6877 636c 6f75  south-1.myhwclou
+	0x00b0:  6473 2e63 6f6d 3a38 300d 0a55 7365 722d  ds.com:80..User-
+	0x00c0:  4167 656e 743a 206f 6273 2d73 646b 2d67  Agent:.obs-sdk-g
+	0x00d0:  6f2f 322e 322e 310d 0a41 7574 686f 7269  o/2.2.1..Authori
+	0x00e0:  7a61 7469 6f6e 3a20 4157 5320 484a 564a  zation:.AWS.HJVJ
+	0x00f0:  5236 5959 324f 5951 3446 4a59 575a 4138  R6YY2OYQ4FJYWZA8
+	0x0100:  3a79 6a43 544a 5247 4363 594a 6261 6475  :yjCTJRGCcYJbadu
+	0x0110:  4844 5744 5744 4470 7741 3955 3d0d 0a44  HDWDWDDpwA9U=..D
+	0x0120:  6174 653a 2054 6875 2c20 3233 2041 7567  ate:.Thu,.23.Aug
+	0x0130:  2032 3031 3820 3039 3a35 353a 3233 2047  .2018.09:55:23.G
+	0x0140:  4d54 0d0a 4163 6365 7074 2d45 6e63 6f64  MT..Accept-Encod
+	0x0150:  696e 673a 2067 7a69 700d 0a0d 0a         ing:.gzip....
+17:55:23.412879 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 1017:1334, ack 2265, win 267, options [nop,nop,TS val 91402646 ecr 3126931372], length 317: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2F HTTP/1.1
+	0x0000:  4500 0171 6fa5 4000 3f06 ad3c c0a8 011d  E..qo.@.?..<....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d305 42c5 500c  ...@...P....B.P.
+	0x0020:  8018 010b 1f09 0000 0101 080a 0572 b196  .............r..
+	0x0030:  ba61 2fac 4745 5420 2f3f 6465 6c69 6d69  .a/.GET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 466c 6962 7261 7279 2532 4620  es%2Flibrary%2F.
+	0x0090:  4854 5450 2f31 2e31 0d0a 486f 7374 3a20  HTTP/1.1..Host:.
+	0x00a0:  646f 636b 6572 2d74 6573 7431 2e6f 6273  docker-test1.obs
+	0x00b0:  2e63 6e2d 736f 7574 682d 312e 6d79 6877  .cn-south-1.myhw
+	0x00c0:  636c 6f75 6473 2e63 6f6d 3a38 300d 0a55  clouds.com:80..U
+	0x00d0:  7365 722d 4167 656e 743a 206f 6273 2d73  ser-Agent:.obs-s
+	0x00e0:  646b 2d67 6f2f 322e 322e 310d 0a41 7574  dk-go/2.2.1..Aut
+	0x00f0:  686f 7269 7a61 7469 6f6e 3a20 4157 5320  horization:.AWS.
+	0x0100:  484a 564a 5236 5959 324f 5951 3446 4a59  HJVJR6YY2OYQ4FJY
+	0x0110:  575a 4138 3a79 6a43 544a 5247 4363 594a  WZA8:yjCTJRGCcYJ
+	0x0120:  6261 6475 4844 5744 5744 4470 7741 3955  baduHDWDWDDpwA9U
+	0x0130:  3d0d 0a44 6174 653a 2054 6875 2c20 3233  =..Date:.Thu,.23
+	0x0140:  2041 7567 2032 3031 3820 3039 3a35 353a  .Aug.2018.09:55:
+	0x0150:  3233 2047 4d54 0d0a 4163 6365 7074 2d45  23.GMT..Accept-E
+	0x0160:  6e63 6f64 696e 673a 2067 7a69 700d 0a0d  ncoding:.gzip...
+	0x0170:  0a                                       .
+17:55:23.432792 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 1334:1638, ack 3081, win 284, options [nop,nop,TS val 91402666 ecr 3126931392], length 304: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp HTTP/1.1
+	0x0000:  4500 0164 6fa6 4000 3f06 ad48 c0a8 011d  E..do.@.?..H....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d442 42c5 533c  ...@...P...BB.S<
+	0x0020:  8018 011c 1efc 0000 0101 080a 0572 b1aa  .............r..
+	0x0030:  ba61 2fc0 4745 5420 2f3f 6d61 782d 6b65  .a/.GET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4672 6570 6f73 6974 6f72 6965  v2%2Frepositorie
+	0x0070:  7325 3246 6c69 6272 6172 7925 3246 7465  s%2Flibrary%2Fte
+	0x0080:  6d70 2048 5454 502f 312e 310d 0a48 6f73  mp.HTTP/1.1..Hos
+	0x0090:  743a 2064 6f63 6b65 722d 7465 7374 312e  t:.docker-test1.
+	0x00a0:  6f62 732e 636e 2d73 6f75 7468 2d31 2e6d  obs.cn-south-1.m
+	0x00b0:  7968 7763 6c6f 7564 732e 636f 6d3a 3830  yhwclouds.com:80
+	0x00c0:  0d0a 5573 6572 2d41 6765 6e74 3a20 6f62  ..User-Agent:.ob
+	0x00d0:  732d 7364 6b2d 676f 2f32 2e32 2e31 0d0a  s-sdk-go/2.2.1..
+	0x00e0:  4175 7468 6f72 697a 6174 696f 6e3a 2041  Authorization:.A
+	0x00f0:  5753 2048 4a56 4a52 3659 5932 4f59 5134  WS.HJVJR6YY2OYQ4
+	0x0100:  464a 5957 5a41 383a 796a 4354 4a52 4743  FJYWZA8:yjCTJRGC
+	0x0110:  6359 4a62 6164 7548 4457 4457 4444 7077  cYJbaduHDWDWDDpw
+	0x0120:  4139 553d 0d0a 4461 7465 3a20 5468 752c  A9U=..Date:.Thu,
+	0x0130:  2032 3320 4175 6720 3230 3138 2030 393a  .23.Aug.2018.09:
+	0x0140:  3535 3a32 3320 474d 540d 0a41 6363 6570  55:23.GMT..Accep
+	0x0150:  742d 456e 636f 6469 6e67 3a20 677a 6970  t-Encoding:.gzip
+	0x0160:  0d0a 0d0a                                ....
+17:55:23.450819 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 1638:1962, ack 4187, win 301, options [nop,nop,TS val 91402684 ecr 3126931410], length 324: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F HTTP/1.1
+	0x0000:  4500 0178 6fa7 4000 3f06 ad33 c0a8 011d  E..xo.@.?..3....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d572 42c5 578e  ...@...P...rB.W.
+	0x0020:  8018 012d 1f10 0000 0101 080a 0572 b1bc  ...-.........r..
+	0x0030:  ba61 2fd2 4745 5420 2f3f 6465 6c69 6d69  .a/.GET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 466c 6962 7261 7279 2532 4674  es%2Flibrary%2Ft
+	0x0090:  656d 7025 3246 2048 5454 502f 312e 310d  emp%2F.HTTP/1.1.
+	0x00a0:  0a48 6f73 743a 2064 6f63 6b65 722d 7465  .Host:.docker-te
+	0x00b0:  7374 312e 6f62 732e 636e 2d73 6f75 7468  st1.obs.cn-south
+	0x00c0:  2d31 2e6d 7968 7763 6c6f 7564 732e 636f  -1.myhwclouds.co
+	0x00d0:  6d3a 3830 0d0a 5573 6572 2d41 6765 6e74  m:80..User-Agent
+	0x00e0:  3a20 6f62 732d 7364 6b2d 676f 2f32 2e32  :.obs-sdk-go/2.2
+	0x00f0:  2e31 0d0a 4175 7468 6f72 697a 6174 696f  .1..Authorizatio
+	0x0100:  6e3a 2041 5753 2048 4a56 4a52 3659 5932  n:.AWS.HJVJR6YY2
+	0x0110:  4f59 5134 464a 5957 5a41 383a 796a 4354  OYQ4FJYWZA8:yjCT
+	0x0120:  4a52 4743 6359 4a62 6164 7548 4457 4457  JRGCcYJbaduHDWDW
+	0x0130:  4444 7077 4139 553d 0d0a 4461 7465 3a20  DDpwA9U=..Date:.
+	0x0140:  5468 752c 2032 3320 4175 6720 3230 3138  Thu,.23.Aug.2018
+	0x0150:  2030 393a 3535 3a32 3320 474d 540d 0a41  .09:55:23.GMT..A
+	0x0160:  6363 6570 742d 456e 636f 6469 6e67 3a20  ccept-Encoding:.
+	0x0170:  677a 6970 0d0a 0d0a                      gzip....
+17:55:23.496744 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 1962:2276, ack 5016, win 319, options [nop,nop,TS val 91402730 ecr 3126931456], length 314: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_layers HTTP/1.1
+	0x0000:  4500 016e 6fa8 4000 3f06 ad3c c0a8 011d  E..no.@.?..<....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d6b6 42c5 5acb  ...@...P....B.Z.
+	0x0020:  8018 013f 1f06 0000 0101 080a 0572 b1ea  ...?.........r..
+	0x0030:  ba61 3000 4745 5420 2f3f 6d61 782d 6b65  .a0.GET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4672 6570 6f73 6974 6f72 6965  v2%2Frepositorie
+	0x0070:  7325 3246 6c69 6272 6172 7925 3246 7465  s%2Flibrary%2Fte
+	0x0080:  6d70 2532 465f 6c61 7965 7273 2048 5454  mp%2F_layers.HTT
+	0x0090:  502f 312e 310d 0a48 6f73 743a 2064 6f63  P/1.1..Host:.doc
+	0x00a0:  6b65 722d 7465 7374 312e 6f62 732e 636e  ker-test1.obs.cn
+	0x00b0:  2d73 6f75 7468 2d31 2e6d 7968 7763 6c6f  -south-1.myhwclo
+	0x00c0:  7564 732e 636f 6d3a 3830 0d0a 5573 6572  uds.com:80..User
+	0x00d0:  2d41 6765 6e74 3a20 6f62 732d 7364 6b2d  -Agent:.obs-sdk-
+	0x00e0:  676f 2f32 2e32 2e31 0d0a 4175 7468 6f72  go/2.2.1..Author
+	0x00f0:  697a 6174 696f 6e3a 2041 5753 2048 4a56  ization:.AWS.HJV
+	0x0100:  4a52 3659 5932 4f59 5134 464a 5957 5a41  JR6YY2OYQ4FJYWZA
+	0x0110:  383a 796a 4354 4a52 4743 6359 4a62 6164  8:yjCTJRGCcYJbad
+	0x0120:  7548 4457 4457 4444 7077 4139 553d 0d0a  uHDWDWDDpwA9U=..
+	0x0130:  4461 7465 3a20 5468 752c 2032 3320 4175  Date:.Thu,.23.Au
+	0x0140:  6720 3230 3138 2030 393a 3535 3a32 3320  g.2018.09:55:23.
+	0x0150:  474d 540d 0a41 6363 6570 742d 456e 636f  GMT..Accept-Enco
+	0x0160:  6469 6e67 3a20 677a 6970 0d0a 0d0a       ding:.gzip....
+17:55:23.524668 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 2276:2620, ack 6130, win 336, options [nop,nop,TS val 91402758 ecr 3126931464], length 344: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_manifests%2Ftags%2F HTTP/1.1
+	0x0000:  4500 018c 6fa9 4000 3f06 ad1d c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 d7f0 42c5 5f25  ...@...P....B._%
+	0x0020:  8018 0150 1f24 0000 0101 080a 0572 b206  ...P.$.......r..
+	0x0030:  ba61 3008 4745 5420 2f3f 6465 6c69 6d69  .a0.GET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 466c 6962 7261 7279 2532 4674  es%2Flibrary%2Ft
+	0x0090:  656d 7025 3246 5f6d 616e 6966 6573 7473  emp%2F_manifests
+	0x00a0:  2532 4674 6167 7325 3246 2048 5454 502f  %2Ftags%2F.HTTP/
+	0x00b0:  312e 310d 0a48 6f73 743a 2064 6f63 6b65  1.1..Host:.docke
+	0x00c0:  722d 7465 7374 312e 6f62 732e 636e 2d73  r-test1.obs.cn-s
+	0x00d0:  6f75 7468 2d31 2e6d 7968 7763 6c6f 7564  outh-1.myhwcloud
+	0x00e0:  732e 636f 6d3a 3830 0d0a 5573 6572 2d41  s.com:80..User-A
+	0x00f0:  6765 6e74 3a20 6f62 732d 7364 6b2d 676f  gent:.obs-sdk-go
+	0x0100:  2f32 2e32 2e31 0d0a 4175 7468 6f72 697a  /2.2.1..Authoriz
+	0x0110:  6174 696f 6e3a 2041 5753 2048 4a56 4a52  ation:.AWS.HJVJR
+	0x0120:  3659 5932 4f59 5134 464a 5957 5a41 383a  6YY2OYQ4FJYWZA8:
+	0x0130:  796a 4354 4a52 4743 6359 4a62 6164 7548  yjCTJRGCcYJbaduH
+	0x0140:  4457 4457 4444 7077 4139 553d 0d0a 4461  DWDWDDpwA9U=..Da
+	0x0150:  7465 3a20 5468 752c 2032 3320 4175 6720  te:.Thu,.23.Aug.
+	0x0160:  3230 3138 2030 393a 3535 3a32 3320 474d  2018.09:55:23.GM
+	0x0170:  540d 0a41 6363 6570 742d 456e 636f 6469  T..Accept-Encodi
+	0x0180:  6e67 3a20 677a 6970 0d0a 0d0a            ng:.gzip....
+17:55:23.568645 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 6872, win 353, options [nop,nop,TS val 91402802 ecr 3126931489], length 0
+	0x0000:  4500 0034 6faa 4000 3f06 ae74 c0a8 011d  E..4o.@.?..t....
+	0x0010:  8b9f d040 80bc 0050 b8b8 d948 42c5 620b  ...@...P...HB.b.
+	0x0020:  8010 0161 1dcc 0000 0101 080a 0572 b232  ...a.........r.2
+	0x0030:  ba61 3021                                .a0!
+17:55:58.650001 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 2620:2998, ack 6872, win 353, options [nop,nop,TS val 91437883 ecr 3126931489], length 378: HTTP: GET /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_layers%2Fsha256%2F9db2ca6ccae029dd195e331f4bede3d2ea2e67e0de29d6a0f8c1572e70f32fa7%2Flink HTTP/1.1
+	0x0000:  4500 01ae 6fab 4000 3f06 acf9 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 d948 42c5 620b  ...@...P...HB.b.
+	0x0020:  8018 0161 1f46 0000 0101 080a 0573 3b3b  ...a.F.......s;;
+	0x0030:  ba61 3021 4745 5420 2f64 6f63 6b65 7225  .a0!GET./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f6c 6179 6572 7325 3246 7368 6132  2F_layers%2Fsha2
+	0x0080:  3536 2532 4639 6462 3263 6136 6363 6165  56%2F9db2ca6ccae
+	0x0090:  3032 3964 6431 3935 6533 3331 6634 6265  029dd195e331f4be
+	0x00a0:  6465 3364 3265 6132 6536 3765 3064 6532  de3d2ea2e67e0de2
+	0x00b0:  3964 3661 3066 3863 3135 3732 6537 3066  9d6a0f8c1572e70f
+	0x00c0:  3332 6661 3725 3246 6c69 6e6b 2048 5454  32fa7%2Flink.HTT
+	0x00d0:  502f 312e 310d 0a48 6f73 743a 2064 6f63  P/1.1..Host:.doc
+	0x00e0:  6b65 722d 7465 7374 312e 6f62 732e 636e  ker-test1.obs.cn
+	0x00f0:  2d73 6f75 7468 2d31 2e6d 7968 7763 6c6f  -south-1.myhwclo
+	0x0100:  7564 732e 636f 6d3a 3830 0d0a 5573 6572  uds.com:80..User
+	0x0110:  2d41 6765 6e74 3a20 6f62 732d 7364 6b2d  -Agent:.obs-sdk-
+	0x0120:  676f 2f32 2e32 2e31 0d0a 4175 7468 6f72  go/2.2.1..Author
+	0x0130:  697a 6174 696f 6e3a 2041 5753 2048 4a56  ization:.AWS.HJV
+	0x0140:  4a52 3659 5932 4f59 5134 464a 5957 5a41  JR6YY2OYQ4FJYWZA
+	0x0150:  383a 7151 3749 7577 6332 786f 6468 754b  8:qQ7Iuwc2xodhuK
+	0x0160:  5879 4b64 4a49 5068 326d 5543 383d 0d0a  XyKdJIPh2mUC8=..
+	0x0170:  4461 7465 3a20 5468 752c 2032 3320 4175  Date:.Thu,.23.Au
+	0x0180:  6720 3230 3138 2030 393a 3535 3a35 3820  g.2018.09:55:58.
+	0x0190:  474d 540d 0a41 6363 6570 742d 456e 636f  GMT..Accept-Enco
+	0x01a0:  6469 6e67 3a20 677a 6970 0d0a 0d0a       ding:.gzip....
+17:55:58.657136 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 7481, win 371, options [nop,nop,TS val 91437890 ecr 3126966616], length 0
+	0x0000:  4500 0034 6fac 4000 3f06 ae72 c0a8 011d  E..4o.@.?..r....
+	0x0010:  8b9f d040 80bc 0050 b8b8 dac2 42c5 646c  ...@...P....B.dl
+	0x0020:  8010 0173 1dcc 0000 0101 080a 0573 3b42  ...s.........s;B
+	0x0030:  ba61 b958                                .a.X
+17:55:58.657370 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 2998:3366, ack 7481, win 371, options [nop,nop,TS val 91437890 ecr 3126966616], length 368: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Fblobs%2Fsha256%2F9d%2F9db2ca6ccae029dd195e331f4bede3d2ea2e67e0de29d6a0f8c1572e70f32fa7%2Fdata HTTP/1.1
+	0x0000:  4500 01a4 6fad 4000 3f06 ad01 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 dac2 42c5 646c  ...@...P....B.dl
+	0x0020:  8018 0173 1f3c 0000 0101 080a 0573 3b42  ...s.<.......s;B
+	0x0030:  ba61 b958 4745 5420 2f3f 6d61 782d 6b65  .a.XGET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4662 6c6f 6273 2532 4673 6861  v2%2Fblobs%2Fsha
+	0x0070:  3235 3625 3246 3964 2532 4639 6462 3263  256%2F9d%2F9db2c
+	0x0080:  6136 6363 6165 3032 3964 6431 3935 6533  a6ccae029dd195e3
+	0x0090:  3331 6634 6265 6465 3364 3265 6132 6536  31f4bede3d2ea2e6
+	0x00a0:  3765 3064 6532 3964 3661 3066 3863 3135  7e0de29d6a0f8c15
+	0x00b0:  3732 6537 3066 3332 6661 3725 3246 6461  72e70f32fa7%2Fda
+	0x00c0:  7461 2048 5454 502f 312e 310d 0a48 6f73  ta.HTTP/1.1..Hos
+	0x00d0:  743a 2064 6f63 6b65 722d 7465 7374 312e  t:.docker-test1.
+	0x00e0:  6f62 732e 636e 2d73 6f75 7468 2d31 2e6d  obs.cn-south-1.m
+	0x00f0:  7968 7763 6c6f 7564 732e 636f 6d3a 3830  yhwclouds.com:80
+	0x0100:  0d0a 5573 6572 2d41 6765 6e74 3a20 6f62  ..User-Agent:.ob
+	0x0110:  732d 7364 6b2d 676f 2f32 2e32 2e31 0d0a  s-sdk-go/2.2.1..
+	0x0120:  4175 7468 6f72 697a 6174 696f 6e3a 2041  Authorization:.A
+	0x0130:  5753 2048 4a56 4a52 3659 5932 4f59 5134  WS.HJVJR6YY2OYQ4
+	0x0140:  464a 5957 5a41 383a 4867 736a 3034 714c  FJYWZA8:Hgsj04qL
+	0x0150:  534a 4e53 7250 4f36 7a47 4f6e 6e6c 6b5a  SJNSrPO6zGOnnlkZ
+	0x0160:  647a 453d 0d0a 4461 7465 3a20 5468 752c  dzE=..Date:.Thu,
+	0x0170:  2032 3320 4175 6720 3230 3138 2030 393a  .23.Aug.2018.09:
+	0x0180:  3535 3a35 3820 474d 540d 0a41 6363 6570  55:58.GMT..Accep
+	0x0190:  742d 456e 636f 6469 6e67 3a20 677a 6970  t-Encoding:.gzip
+	0x01a0:  0d0a 0d0a                                ....
+17:55:58.702632 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 8623, win 389, options [nop,nop,TS val 91437936 ecr 3126966622], length 0
+	0x0000:  4500 0034 6fae 4000 3f06 ae70 c0a8 011d  E..4o.@.?..p....
+	0x0010:  8b9f d040 80bc 0050 b8b8 dc32 42c5 68e2  ...@...P...2B.h.
+	0x0020:  8010 0185 1dcc 0000 0101 080a 0573 3b70  .............s;p
+	0x0030:  ba61 b95e                                .a.^
+17:55:58.707292 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 3366:3844, ack 8623, win 389, options [nop,nop,TS val 91437940 ecr 3126966622], length 478: HTTP: PUT /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fstartedat HTTP/1.1
+	0x0000:  4500 0212 6faf 4000 3f06 ac91 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 dc32 42c5 68e2  ...@...P...2B.h.
+	0x0020:  8018 0185 1faa 0000 0101 080a 0573 3b74  .............s;t
+	0x0030:  ba61 b95e 5055 5420 2f64 6f63 6b65 7225  .a.^PUT./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 7374 6172 7465 6461 7420 4854  0%2Fstartedat.HT
+	0x00b0:  5450 2f31 2e31 0d0a 486f 7374 3a20 646f  TP/1.1..Host:.do
+	0x00c0:  636b 6572 2d74 6573 7431 2e6f 6273 2e63  cker-test1.obs.c
+	0x00d0:  6e2d 736f 7574 682d 312e 6d79 6877 636c  n-south-1.myhwcl
+	0x00e0:  6f75 6473 2e63 6f6d 3a38 300d 0a55 7365  ouds.com:80..Use
+	0x00f0:  722d 4167 656e 743a 206f 6273 2d73 646b  r-Agent:.obs-sdk
+	0x0100:  2d67 6f2f 322e 322e 310d 0a43 6f6e 7465  -go/2.2.1..Conte
+	0x0110:  6e74 2d4c 656e 6774 683a 2032 300d 0a41  nt-Length:.20..A
+	0x0120:  7574 686f 7269 7a61 7469 6f6e 3a20 4157  uthorization:.AW
+	0x0130:  5320 484a 564a 5236 5959 324f 5951 3446  S.HJVJR6YY2OYQ4F
+	0x0140:  4a59 575a 4138 3a77 454a 336d 7446 3054  JYWZA8:wEJ3mtF0T
+	0x0150:  3635 466e 7757 3041 5676 2b58 3632 5a55  65FnwW0AVv+X62ZU
+	0x0160:  676f 3d0d 0a43 6f6e 7465 6e74 2d54 7970  go=..Content-Typ
+	0x0170:  653a 2061 7070 6c69 6361 7469 6f6e 2f6f  e:.application/o
+	0x0180:  6374 6574 2d73 7472 6561 6d0d 0a44 6174  ctet-stream..Dat
+	0x0190:  653a 2054 6875 2c20 3233 2041 7567 2032  e:.Thu,.23.Aug.2
+	0x01a0:  3031 3820 3039 3a35 353a 3538 2047 4d54  018.09:55:58.GMT
+	0x01b0:  0d0a 782d 616d 7a2d 6163 6c3a 2070 7269  ..x-amz-acl:.pri
+	0x01c0:  7661 7465 0d0a 782d 616d 7a2d 7374 6f72  vate..x-amz-stor
+	0x01d0:  6167 652d 636c 6173 733a 2053 5441 4e44  age-class:.STAND
+	0x01e0:  4152 440d 0a41 6363 6570 742d 456e 636f  ARD..Accept-Enco
+	0x01f0:  6469 6e67 3a20 677a 6970 0d0a 0d0a 3230  ding:.gzip....20
+	0x0200:  3138 2d30 382d 3233 5430 393a 3535 3a35  18-08-23T09:55:5
+	0x0210:  385a                                     8Z
+17:55:58.714490 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 9052, win 406, options [nop,nop,TS val 91437947 ecr 3126966674], length 0
+	0x0000:  4500 0034 6fb0 4000 3f06 ae6e c0a8 011d  E..4o.@.?..n....
+	0x0010:  8b9f d040 80bc 0050 b8b8 de10 42c5 6a8f  ...@...P....B.j.
+	0x0020:  8010 0196 1dcc 0000 0101 080a 0573 3b7b  .............s;{
+	0x0030:  ba61 b992                                .a..
+17:55:58.716279 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 3844:4265, ack 9052, win 406, options [nop,nop,TS val 91437949 ecr 3126966674], length 421: HTTP: POST /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fdata?uploads HTTP/1.1
+	0x0000:  4500 01d9 6fb1 4000 3f06 acc8 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 de10 42c5 6a8f  ...@...P....B.j.
+	0x0020:  8018 0196 1f71 0000 0101 080a 0573 3b7d  .....q.......s;}
+	0x0030:  ba61 b992 504f 5354 202f 646f 636b 6572  .a..POST./docker
+	0x0040:  2532 4672 6567 6973 7472 7925 3246 7632  %2Fregistry%2Fv2
+	0x0050:  2532 4672 6570 6f73 6974 6f72 6965 7325  %2Frepositories%
+	0x0060:  3246 6c69 6272 6172 7925 3246 7465 6d70  2Flibrary%2Ftemp
+	0x0070:  2532 465f 7570 6c6f 6164 7325 3246 3564  %2F_uploads%2F5d
+	0x0080:  3263 6437 3839 2d64 3137 392d 3464 3661  2cd789-d179-4d6a
+	0x0090:  2d38 6463 312d 3030 3035 6636 3136 3738  -8dc1-0005f61678
+	0x00a0:  3130 2532 4664 6174 613f 7570 6c6f 6164  10%2Fdata?upload
+	0x00b0:  7320 4854 5450 2f31 2e31 0d0a 486f 7374  s.HTTP/1.1..Host
+	0x00c0:  3a20 646f 636b 6572 2d74 6573 7431 2e6f  :.docker-test1.o
+	0x00d0:  6273 2e63 6e2d 736f 7574 682d 312e 6d79  bs.cn-south-1.my
+	0x00e0:  6877 636c 6f75 6473 2e63 6f6d 3a38 300d  hwclouds.com:80.
+	0x00f0:  0a55 7365 722d 4167 656e 743a 206f 6273  .User-Agent:.obs
+	0x0100:  2d73 646b 2d67 6f2f 322e 322e 310d 0a43  -sdk-go/2.2.1..C
+	0x0110:  6f6e 7465 6e74 2d4c 656e 6774 683a 2030  ontent-Length:.0
+	0x0120:  0d0a 4175 7468 6f72 697a 6174 696f 6e3a  ..Authorization:
+	0x0130:  2041 5753 2048 4a56 4a52 3659 5932 4f59  .AWS.HJVJR6YY2OY
+	0x0140:  5134 464a 5957 5a41 383a 4557 6f45 4d6c  Q4FJYWZA8:EWoEMl
+	0x0150:  4149 3262 2b6b 7830 7771 7557 6d76 7162  AI2b+kx0wquWmvqb
+	0x0160:  7a61 7278 513d 0d0a 4461 7465 3a20 5468  zarxQ=..Date:.Th
+	0x0170:  752c 2032 3320 4175 6720 3230 3138 2030  u,.23.Aug.2018.0
+	0x0180:  393a 3535 3a35 3820 474d 540d 0a78 2d61  9:55:58.GMT..x-a
+	0x0190:  6d7a 2d61 636c 3a20 7072 6976 6174 650d  mz-acl:.private.
+	0x01a0:  0a78 2d61 6d7a 2d73 746f 7261 6765 2d63  .x-amz-storage-c
+	0x01b0:  6c61 7373 3a20 5354 414e 4441 5244 0d0a  lass:.STANDARD..
+	0x01c0:  4163 6365 7074 2d45 6e63 6f64 696e 673a  Accept-Encoding:
+	0x01d0:  2067 7a69 700d 0a0d 0a                   .gzip....
+17:55:58.723660 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 4265:4895, ack 9776, win 424, options [nop,nop,TS val 91437957 ecr 3126966682], length 630: HTTP: PUT /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fhashstates%2Fsha256%2F0 HTTP/1.1
+	0x0000:  4500 02aa 6fb2 4000 3f06 abf6 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 dfb5 42c5 6d63  ...@...P....B.mc
+	0x0020:  8018 01a8 2042 0000 0101 080a 0573 3b85  .....B.......s;.
+	0x0030:  ba61 b99a 5055 5420 2f64 6f63 6b65 7225  .a..PUT./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 6861 7368 7374 6174 6573 2532  0%2Fhashstates%2
+	0x00b0:  4673 6861 3235 3625 3246 3020 4854 5450  Fsha256%2F0.HTTP
+	0x00c0:  2f31 2e31 0d0a 486f 7374 3a20 646f 636b  /1.1..Host:.dock
+	0x00d0:  6572 2d74 6573 7431 2e6f 6273 2e63 6e2d  er-test1.obs.cn-
+	0x00e0:  736f 7574 682d 312e 6d79 6877 636c 6f75  south-1.myhwclou
+	0x00f0:  6473 2e63 6f6d 3a38 300d 0a55 7365 722d  ds.com:80..User-
+	0x0100:  4167 656e 743a 206f 6273 2d73 646b 2d67  Agent:.obs-sdk-g
+	0x0110:  6f2f 322e 322e 310d 0a43 6f6e 7465 6e74  o/2.2.1..Content
+	0x0120:  2d4c 656e 6774 683a 2031 3537 0d0a 4175  -Length:.157..Au
+	0x0130:  7468 6f72 697a 6174 696f 6e3a 2041 5753  thorization:.AWS
+	0x0140:  2048 4a56 4a52 3659 5932 4f59 5134 464a  .HJVJR6YY2OYQ4FJ
+	0x0150:  5957 5a41 383a 4f5a 636a 6c48 4d61 6c6c  YWZA8:OZcjlHMall
+	0x0160:  4a65 4155 4474 6641 4d47 5771 7232 2f59  JeAUDtfAMGWqr2/Y
+	0x0170:  593d 0d0a 436f 6e74 656e 742d 5479 7065  Y=..Content-Type
+	0x0180:  3a20 6170 706c 6963 6174 696f 6e2f 6f63  :.application/oc
+	0x0190:  7465 742d 7374 7265 616d 0d0a 4461 7465  tet-stream..Date
+	0x01a0:  3a20 5468 752c 2032 3320 4175 6720 3230  :.Thu,.23.Aug.20
+	0x01b0:  3138 2030 393a 3535 3a35 3820 474d 540d  18.09:55:58.GMT.
+	0x01c0:  0a78 2d61 6d7a 2d61 636c 3a20 7072 6976  .x-amz-acl:.priv
+	0x01d0:  6174 650d 0a78 2d61 6d7a 2d73 746f 7261  ate..x-amz-stora
+	0x01e0:  6765 2d63 6c61 7373 3a20 5354 414e 4441  ge-class:.STANDA
+	0x01f0:  5244 0d0a 4163 6365 7074 2d45 6e63 6f64  RD..Accept-Encod
+	0x0200:  696e 673a 2067 7a69 700d 0a0d 0a0e ff81  ing:.gzip.......
+	0x0210:  0101 02ff 8200 0106 0110 0000 2cff 8200  ............,...
+	0x0220:  08fc 6a09 e667 fcbb 67ae 85fc 3c6e f372  ..j..g..g...<n.r
+	0x0230:  fca5 4ff5 3afc 510e 527f fc9b 0568 8cfc  ..O.:.Q.R....h..
+	0x0240:  1f83 d9ab fc5b e0cd 190f ff83 0101 02ff  .....[..........
+	0x0250:  8400 0106 01ff 8000 0044 ff84 0040 0000  .........D...@..
+	0x0260:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0270:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0280:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0290:  0000 0000 0000 0000 0000 0000 0000 0304  ................
+	0x02a0:  0000 0306 0000 0306 0005                 ..........
+17:55:58.745100 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 4895:5242, ack 10205, win 442, options [nop,nop,TS val 91437978 ecr 3126966689], length 347: HTTP: GET /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fstartedat HTTP/1.1
+	0x0000:  4500 018f 6fb3 4000 3f06 ad10 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 e22b 42c5 6f10  ...@...P...+B.o.
+	0x0020:  8018 01ba 1f27 0000 0101 080a 0573 3b9a  .....'.......s;.
+	0x0030:  ba61 b9a1 4745 5420 2f64 6f63 6b65 7225  .a..GET./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 7374 6172 7465 6461 7420 4854  0%2Fstartedat.HT
+	0x00b0:  5450 2f31 2e31 0d0a 486f 7374 3a20 646f  TP/1.1..Host:.do
+	0x00c0:  636b 6572 2d74 6573 7431 2e6f 6273 2e63  cker-test1.obs.c
+	0x00d0:  6e2d 736f 7574 682d 312e 6d79 6877 636c  n-south-1.myhwcl
+	0x00e0:  6f75 6473 2e63 6f6d 3a38 300d 0a55 7365  ouds.com:80..Use
+	0x00f0:  722d 4167 656e 743a 206f 6273 2d73 646b  r-Agent:.obs-sdk
+	0x0100:  2d67 6f2f 322e 322e 310d 0a41 7574 686f  -go/2.2.1..Autho
+	0x0110:  7269 7a61 7469 6f6e 3a20 4157 5320 484a  rization:.AWS.HJ
+	0x0120:  564a 5236 5959 324f 5951 3446 4a59 575a  VJR6YY2OYQ4FJYWZ
+	0x0130:  4138 3a36 4c39 6342 7753 7274 4f78 7542  A8:6L9cBwSrtOxuB
+	0x0140:  3142 544d 714b 504f 6b4c 6c59 7051 3d0d  1BTMqKPOkLlYpQ=.
+	0x0150:  0a44 6174 653a 2054 6875 2c20 3233 2041  .Date:.Thu,.23.A
+	0x0160:  7567 2032 3031 3820 3039 3a35 353a 3538  ug.2018.09:55:58
+	0x0170:  2047 4d54 0d0a 4163 6365 7074 2d45 6e63  .GMT..Accept-Enc
+	0x0180:  6f64 696e 673a 2067 7a69 700d 0a0d 0a    oding:.gzip....
+17:55:58.749598 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 5242:5600, ack 10763, win 460, options [nop,nop,TS val 91437982 ecr 3126966709], length 358: HTTP: GET /?prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fdata&uploads HTTP/1.1
+	0x0000:  4500 019a 6fb4 4000 3f06 ad04 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 e386 42c5 713e  ...@...P....B.q>
+	0x0020:  8018 01cc 1f32 0000 0101 080a 0573 3b9e  .....2.......s;.
+	0x0030:  ba61 b9b5 4745 5420 2f3f 7072 6566 6978  .a..GET./?prefix
+	0x0040:  3d64 6f63 6b65 7225 3246 7265 6769 7374  =docker%2Fregist
+	0x0050:  7279 2532 4676 3225 3246 7265 706f 7369  ry%2Fv2%2Freposi
+	0x0060:  746f 7269 6573 2532 466c 6962 7261 7279  tories%2Flibrary
+	0x0070:  2532 4674 656d 7025 3246 5f75 706c 6f61  %2Ftemp%2F_uploa
+	0x0080:  6473 2532 4635 6432 6364 3738 392d 6431  ds%2F5d2cd789-d1
+	0x0090:  3739 2d34 6436 612d 3864 6331 2d30 3030  79-4d6a-8dc1-000
+	0x00a0:  3566 3631 3637 3831 3025 3246 6461 7461  5f6167810%2Fdata
+	0x00b0:  2675 706c 6f61 6473 2048 5454 502f 312e  &uploads.HTTP/1.
+	0x00c0:  310d 0a48 6f73 743a 2064 6f63 6b65 722d  1..Host:.docker-
+	0x00d0:  7465 7374 312e 6f62 732e 636e 2d73 6f75  test1.obs.cn-sou
+	0x00e0:  7468 2d31 2e6d 7968 7763 6c6f 7564 732e  th-1.myhwclouds.
+	0x00f0:  636f 6d3a 3830 0d0a 5573 6572 2d41 6765  com:80..User-Age
+	0x0100:  6e74 3a20 6f62 732d 7364 6b2d 676f 2f32  nt:.obs-sdk-go/2
+	0x0110:  2e32 2e31 0d0a 4175 7468 6f72 697a 6174  .2.1..Authorizat
+	0x0120:  696f 6e3a 2041 5753 2048 4a56 4a52 3659  ion:.AWS.HJVJR6Y
+	0x0130:  5932 4f59 5134 464a 5957 5a41 383a 754e  Y2OYQ4FJYWZA8:uN
+	0x0140:  4833 4b7a 3856 4578 6e36 4a4e 7467 4f63  H3Kz8VExn6JNtgOc
+	0x0150:  7a39 5553 7049 7076 553d 0d0a 4461 7465  z9USpIpvU=..Date
+	0x0160:  3a20 5468 752c 2032 3320 4175 6720 3230  :.Thu,.23.Aug.20
+	0x0170:  3138 2030 393a 3535 3a35 3820 474d 540d  18.09:55:58.GMT.
+	0x0180:  0a41 6363 6570 742d 456e 636f 6469 6e67  .Accept-Encoding
+	0x0190:  3a20 677a 6970 0d0a 0d0a                 :.gzip....
+17:55:58.754813 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 5600:5984, ack 12065, win 480, options [nop,nop,TS val 91437988 ecr 3126966714], length 384: HTTP: GET /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fdata?uploadId=00000165663649C9900BD719BBD03628 HTTP/1.1
+	0x0000:  4500 01b4 6fb5 4000 3f06 ace9 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 e4ec 42c5 7654  ...@...P....B.vT
+	0x0020:  8018 01e0 1f4c 0000 0101 080a 0573 3ba4  .....L.......s;.
+	0x0030:  ba61 b9ba 4745 5420 2f64 6f63 6b65 7225  .a..GET./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 6461 7461 3f75 706c 6f61 6449  0%2Fdata?uploadI
+	0x00b0:  643d 3030 3030 3031 3635 3636 3336 3439  d=00000165663649
+	0x00c0:  4339 3930 3042 4437 3139 4242 4430 3336  C9900BD719BBD036
+	0x00d0:  3238 2048 5454 502f 312e 310d 0a48 6f73  28.HTTP/1.1..Hos
+	0x00e0:  743a 2064 6f63 6b65 722d 7465 7374 312e  t:.docker-test1.
+	0x00f0:  6f62 732e 636e 2d73 6f75 7468 2d31 2e6d  obs.cn-south-1.m
+	0x0100:  7968 7763 6c6f 7564 732e 636f 6d3a 3830  yhwclouds.com:80
+	0x0110:  0d0a 5573 6572 2d41 6765 6e74 3a20 6f62  ..User-Agent:.ob
+	0x0120:  732d 7364 6b2d 676f 2f32 2e32 2e31 0d0a  s-sdk-go/2.2.1..
+	0x0130:  4175 7468 6f72 697a 6174 696f 6e3a 2041  Authorization:.A
+	0x0140:  5753 2048 4a56 4a52 3659 5932 4f59 5134  WS.HJVJR6YY2OYQ4
+	0x0150:  464a 5957 5a41 383a 4679 5675 4233 3558  FJYWZA8:FyVuB35X
+	0x0160:  6b47 6446 306a 4538 5847 346e 536d 3838  kGdF0jE8XG4nSm88
+	0x0170:  6233 6f3d 0d0a 4461 7465 3a20 5468 752c  b3o=..Date:.Thu,
+	0x0180:  2032 3320 4175 6720 3230 3138 2030 393a  .23.Aug.2018.09:
+	0x0190:  3535 3a35 3820 474d 540d 0a41 6363 6570  55:58.GMT..Accep
+	0x01a0:  742d 456e 636f 6469 6e67 3a20 677a 6970  t-Encoding:.gzip
+	0x01b0:  0d0a 0d0a                                ....
+17:55:58.760898 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 5984:6630, ack 13170, win 501, options [nop,nop,TS val 91437994 ecr 3126966720], length 646: HTTP: PUT /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fhashstates%2Fsha256%2F985 HTTP/1.1
+	0x0000:  4500 02ba 6fb6 4000 3f06 abe2 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 e66c 42c5 7aa5  ...@...P...lB.z.
+	0x0020:  8018 01f5 2052 0000 0101 080a 0573 3baa  .....R.......s;.
+	0x0030:  ba61 b9c0 5055 5420 2f64 6f63 6b65 7225  .a..PUT./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 6861 7368 7374 6174 6573 2532  0%2Fhashstates%2
+	0x00b0:  4673 6861 3235 3625 3246 3938 3520 4854  Fsha256%2F985.HT
+	0x00c0:  5450 2f31 2e31 0d0a 486f 7374 3a20 646f  TP/1.1..Host:.do
+	0x00d0:  636b 6572 2d74 6573 7431 2e6f 6273 2e63  cker-test1.obs.c
+	0x00e0:  6e2d 736f 7574 682d 312e 6d79 6877 636c  n-south-1.myhwcl
+	0x00f0:  6f75 6473 2e63 6f6d 3a38 300d 0a55 7365  ouds.com:80..Use
+	0x0100:  722d 4167 656e 743a 206f 6273 2d73 646b  r-Agent:.obs-sdk
+	0x0110:  2d67 6f2f 322e 322e 310d 0a43 6f6e 7465  -go/2.2.1..Conte
+	0x0120:  6e74 2d4c 656e 6774 683a 2031 3731 0d0a  nt-Length:.171..
+	0x0130:  4175 7468 6f72 697a 6174 696f 6e3a 2041  Authorization:.A
+	0x0140:  5753 2048 4a56 4a52 3659 5932 4f59 5134  WS.HJVJR6YY2OYQ4
+	0x0150:  464a 5957 5a41 383a 4575 526b 4f59 2f59  FJYWZA8:EuRkOY/Y
+	0x0160:  6671 3062 6b56 5852 7155 7263 5863 4a6d  fq0bkVXRqUrcXcJm
+	0x0170:  7355 773d 0d0a 436f 6e74 656e 742d 5479  sUw=..Content-Ty
+	0x0180:  7065 3a20 6170 706c 6963 6174 696f 6e2f  pe:.application/
+	0x0190:  6f63 7465 742d 7374 7265 616d 0d0a 4461  octet-stream..Da
+	0x01a0:  7465 3a20 5468 752c 2032 3320 4175 6720  te:.Thu,.23.Aug.
+	0x01b0:  3230 3138 2030 393a 3535 3a35 3820 474d  2018.09:55:58.GM
+	0x01c0:  540d 0a78 2d61 6d7a 2d61 636c 3a20 7072  T..x-amz-acl:.pr
+	0x01d0:  6976 6174 650d 0a78 2d61 6d7a 2d73 746f  ivate..x-amz-sto
+	0x01e0:  7261 6765 2d63 6c61 7373 3a20 5354 414e  rage-class:.STAN
+	0x01f0:  4441 5244 0d0a 4163 6365 7074 2d45 6e63  DARD..Accept-Enc
+	0x0200:  6f64 696e 673a 2067 7a69 700d 0a0d 0a0e  oding:.gzip.....
+	0x0210:  ff81 0101 02ff 8200 0106 0110 0000 2cff  ..............,.
+	0x0220:  8200 08fc fe77 c5f2 fc49 80d5 6afc fd4e  .....w...I..j..N
+	0x0230:  4d82 fc82 abf9 affc 9856 f038 fc75 8f43  M........V.8.u.C
+	0x0240:  e1fc e0db 100b fc3d 41b3 d00f ff83 0101  .......=A.......
+	0x0250:  02ff 8400 0106 01ff 8000 0050 ff84 0040  ...........P...@
+	0x0260:  ffa7 ffe0 ffcf ffe4 4cff ceff e44c fffe  ........L....L..
+	0x0270:  4bff f247 0000 00ff ffff ff15 ffad ff91  K..G............
+	0x0280:  3400 0e00 0000 0000 0000 0000 0000 0000  4...............
+	0x0290:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x02a0:  0000 0000 0000 0000 0000 0000 0304 0032  ...............2
+	0x02b0:  0506 00fe 03d9 0306 0005                 ..........
+17:55:58.766870 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 6630:8033, ack 13599, win 521, options [nop,nop,TS val 91438000 ecr 3126966726], length 1403: HTTP: PUT /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fdata?partNumber=1&uploadId=00000165663649C9900BD719BBD03628 HTTP/1.1
+	0x0000:  4500 05af 6fb7 4000 3f06 a8ec c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 e8f2 42c5 7c52  ...@...P....B.|R
+	0x0020:  8018 0209 2347 0000 0101 080a 0573 3bb0  ....#G.......s;.
+	0x0030:  ba61 b9c6 5055 5420 2f64 6f63 6b65 7225  .a..PUT./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 6461 7461 3f70 6172 744e 756d  0%2Fdata?partNum
+	0x00b0:  6265 723d 3126 7570 6c6f 6164 4964 3d30  ber=1&uploadId=0
+	0x00c0:  3030 3030 3136 3536 3633 3634 3943 3939  0000165663649C99
+	0x00d0:  3030 4244 3731 3942 4244 3033 3632 3820  00BD719BBD03628.
+	0x00e0:  4854 5450 2f31 2e31 0d0a 486f 7374 3a20  HTTP/1.1..Host:.
+	0x00f0:  646f 636b 6572 2d74 6573 7431 2e6f 6273  docker-test1.obs
+	0x0100:  2e63 6e2d 736f 7574 682d 312e 6d79 6877  .cn-south-1.myhw
+	0x0110:  636c 6f75 6473 2e63 6f6d 3a38 300d 0a55  clouds.com:80..U
+	0x0120:  7365 722d 4167 656e 743a 206f 6273 2d73  ser-Agent:.obs-s
+	0x0130:  646b 2d67 6f2f 322e 322e 310d 0a43 6f6e  dk-go/2.2.1..Con
+	0x0140:  7465 6e74 2d4c 656e 6774 683a 2039 3835  tent-Length:.985
+	0x0150:  0d0a 4175 7468 6f72 697a 6174 696f 6e3a  ..Authorization:
+	0x0160:  2041 5753 2048 4a56 4a52 3659 5932 4f59  .AWS.HJVJR6YY2OY
+	0x0170:  5134 464a 5957 5a41 383a 6675 4e39 547a  Q4FJYWZA8:fuN9Tz
+	0x0180:  574e 4731 4c38 2f47 4844 586e 5653 4952  WNG1L8/GHDXnVSIR
+	0x0190:  7656 3275 413d 0d0a 4461 7465 3a20 5468  vV2uA=..Date:.Th
+	0x01a0:  752c 2032 3320 4175 6720 3230 3138 2030  u,.23.Aug.2018.0
+	0x01b0:  393a 3535 3a35 3820 474d 540d 0a41 6363  9:55:58.GMT..Acc
+	0x01c0:  6570 742d 456e 636f 6469 6e67 3a20 677a  ept-Encoding:.gz
+	0x01d0:  6970 0d0a 0d0a 1f8b 0800 0000 0000 00ff  ip..............
+	0x01e0:  ec55 cf6b 24d5 13af 4926 9bd0 fbfd 921c  .U.k$...I&......
+	0x01f0:  f4a4 68b9 6645 61d2 9949 e226 8655 e6b0  ..h.fEa..I.&.U..
+	0x0200:  bbce 4256 56cd 7af0 a26f ba6b a61f e9ee  ..BVV.z..o.k....
+	0x0210:  37bc 57ed 245e 3cc4 8383 08de 3c78 d39b  7.W.$^<.....<x..
+	0x0220:  8277 11dc e05e 16ff 00f1 1f10 143c ecc9  .w...^.......<..
+	0x0230:  f510 1879 ddaf b333 4d04 45f6 a0a4 205d  ...y...3M.E....]
+	0x0240:  a9ea cfa7 7ebd 7e35 11c5 b182 872b cd56  ....~.~5.....+.V
+	0x0250:  b3b9 b9f9 3c34 0ba9 eaf5 8dcd 26b4 d6d7  ....<4......&...
+	0x0260:  d75a 6b1b 9b39 aed5 5c6f 6d02 361f 725d  .Zk..9..\om.6.r]
+	0x0270:  b964 8685 86e6 3fce 556d ee5f 22ef 5ddd  .d....?.Um._".].
+	0x0280:  b936 53ab 9dd8 33f0 1258 eb66 ad9d db6d  .6S...3..X.f...m
+	0x0290:  e7df 9f7b c069 c316 d4a1 0df3 702e c7ce  ...{.i......p...
+	0x02a0:  4d45 6c4f e92d f772 eb04 84f9 b3ee fed0  MElO.-.r........
+	0x02b0:  a546 97af d4cb 0e5d eaba d3f3 eeff 9378  .F.....].......x
+	0x02c0:  4b6f 4feb 0abe d4af fec4 e1b9 bf3e 1658  KoO..........>.X
+	0x02d0:  9ae0 3f02 00b3 00f0 f22b b7e0 ff57 3fff  ..?......+...W?.
+	0x02e0:  e28d 8b4f 7ff2 e5e2 0bdf 7cfa 197c 155c  ...O......|..|.\
+	0x02f0:  ef0f 2779 9d8f 1e95 561d feba f0ad 6ded  ..'y....V.....m.
+	0x0300:  b67d 7cdd 9805 681d fdbc 0800 6fb6 7ebb  .}|...h.....o.~.
+	0x0310:  7d19 acf9 4b8e 1ffd de19 ddef 8c7e e88c  }...K........~..
+	0x0320:  bebf 31fa eec6 e8ee ce87 3bcb 0b8b 739d  ..1.......;...s.
+	0x0330:  176b f7c6 e3c5 c3f3 0070 a7e7 2f3e f97e  .k.......p../>.~
+	0x0340:  11ff fe8f e1a8 7ef1 783c 1e77 0eef 8eef  ......~.x<.w....
+	0x0350:  781d 7b81 b1a7 5582 5754 b047 fa29 6f37  x.{...U.WT.G.)o7
+	0x0360:  9206 1332 46f4 094d a486 0639 128c 072a  ...2F..M...9...*
+	0x0370:  d328 53c3 228e 054b 95a2 180c 4868 83ac  .(S."..K....Hh..
+	0x0380:  b04b 3854 7a4f a67d 0c94 d614 707c e07b  .K8TzO.}....p|.{
+	0x0390:  deae c23e a5a4 0513 f244 dc86 cb86 acd4  ...>.....D......
+	0x03a0:  1e72 44d8 5371 ac86 966f 9806 66db c396  .rD.Sq...o..f...
+	0x03b0:  8fbb 1195 c020 9694 3206 2a65 1130 8539  ........2.*e.0.9
+	0x03c0:  c9bd 0b05 252a f53d 5c9b a214 6e1c 6471  ....%*.=\...n.dq
+	0x03d0:  ecf0 17f2 7db5 3254 3a0e 2fa0 4c6c 8779  ....}.2T:./.Ll.y
+	0x03e0:  ef13 c13a 59d7 f710 119f 1549 7869 e339  ...:Y......Ixi.9
+	0x03f0:  0fd7 4f8b 1a68 12b6 0c81 290d 8bb2 644a  ..O..h....)...dJ
+	0x0400:  ba0c 27d8 851f 4632 8850 67a9 9d22 e581  ..'...F2.Pg.."..
+	0x0410:  699f 828c 4537 a602 38d0 2acc 02ca 01a8  i...E7..8.*.....
+	0x0420:  321e 64f9 b051 68c2 20d3 9a52 8e0f 5093  2.d..Qh....R..P.
+	0x0430:  0865 daf7 3ddc 38ad 1ec3 9a44 92f7 29b8  .e..=.8....D..).
+	0x0440:  8cc2 6ab2 b362 840d 5792 b1e3 949c 57c4  ..j..b..W.....W.
+	0x0450:  aa38 5d26 9dc8 54c4 c5c9 b13e 40a3 12e2  .8]&..T....>@...
+	0x0460:  c81e 4ba2 34a1 48ba 92a5 ca4c 23af 3010  ..K.4.H....L#.0.
+	0x0470:  a96d 0d45 8ab7 ba59 cad9 c420 8692 a36d  .m.E...Y.......m
+	0x0480:  0f97 312c b25b dc8a 64cc 0a60 5798 c8f3  ..1,.[..d..`W...
+	0x0490:  5e8f 6c93 f9a4 4c03 45c6 2ab1 9f8a fd94  ^.l...L.E.*.....
+	0x04a0:  7ab1 1a5a 5f1a 16a9 6d3c 14d8 d374 d2d0  z..Z_...m<...t..
+	0x04b0:  f52b db1e 46cc 03b3 bdba 1a65 5dbf 48e5  .+..F......e].H.
+	0x04c0:  072a 59f5 bc6b 4a17 4cda 17c9 2026 93c7  .*Y..kJ.L....&..
+	0x04d0:  9221 09d3 c077 a491 3cc1 0e55 6026 e994  .!...w..<..U`&..
+	0x04e0:  f665 4aab 9921 ddcf 6448 ab9e 07ee 2e5b  .eJ..!..dH.....[
+	0x04f0:  a9bd fb1a d4f6 976a 8ffd 6f7e e1e3 5ae1  .......j..o~..Z.
+	0x0500:  7f1c 0006 c7e3 f133 13f7 d9fa 3700 e083  .......3....7...
+	0x0510:  e3f1 7869 f2a2 fb26 32ac 5974 c14f 1593  ..xi...&2.Yt.O..
+	0x0520:  df4f 33bf 9bc9 385c 9121 f84c fb0c be56  .O3...8\.!.L...V
+	0x0530:  a160 013e 456f f5b4 4808 7cee 1af3 37b6  .`.>Eo..H.|...7.
+	0x0540:  d09f cb79 b70b 679c fd60 7f16 f672 055f  ...y..g..`...r._
+	0x0550:  afd8 4fd8 1900 40b9 13cb 7d7f d3f1 0715  ..O...@...}.....
+	0x0560:  fc52 c55e 76fc 32ff 91e3 1f39 feca ec34  .R.^v.2....9...4
+	0x0570:  1e2b fc46 857f afde 76ba b03b 15fc 42c5  .+.F....v..;..B.
+	0x0580:  bee4 7cb3 6563 6eff 97bf 0bd5 7eab 76cd  ..|.ecn.....~.v.
+	0x0590:  edf4 aa94 fccb a7e0 cfe4 4cce e44c fe4b  ..........L..L.K
+	0x05a0:  f247 0000 00ff ff15 ad91 3400 0e00 00    .G........4....
+17:55:58.777610 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 8033:8679, ack 13976, win 541, options [nop,nop,TS val 91438010 ecr 3126966737], length 646: HTTP: PUT /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fhashstates%2Fsha256%2F985 HTTP/1.1
+	0x0000:  4500 02ba 6fb8 4000 3f06 abe0 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 ee6d 42c5 7dcb  ...@...P...mB.}.
+	0x0020:  8018 021d 2052 0000 0101 080a 0573 3bba  .....R.......s;.
+	0x0030:  ba61 b9d1 5055 5420 2f64 6f63 6b65 7225  .a..PUT./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 6861 7368 7374 6174 6573 2532  0%2Fhashstates%2
+	0x00b0:  4673 6861 3235 3625 3246 3938 3520 4854  Fsha256%2F985.HT
+	0x00c0:  5450 2f31 2e31 0d0a 486f 7374 3a20 646f  TP/1.1..Host:.do
+	0x00d0:  636b 6572 2d74 6573 7431 2e6f 6273 2e63  cker-test1.obs.c
+	0x00e0:  6e2d 736f 7574 682d 312e 6d79 6877 636c  n-south-1.myhwcl
+	0x00f0:  6f75 6473 2e63 6f6d 3a38 300d 0a55 7365  ouds.com:80..Use
+	0x0100:  722d 4167 656e 743a 206f 6273 2d73 646b  r-Agent:.obs-sdk
+	0x0110:  2d67 6f2f 322e 322e 310d 0a43 6f6e 7465  -go/2.2.1..Conte
+	0x0120:  6e74 2d4c 656e 6774 683a 2031 3731 0d0a  nt-Length:.171..
+	0x0130:  4175 7468 6f72 697a 6174 696f 6e3a 2041  Authorization:.A
+	0x0140:  5753 2048 4a56 4a52 3659 5932 4f59 5134  WS.HJVJR6YY2OYQ4
+	0x0150:  464a 5957 5a41 383a 4575 526b 4f59 2f59  FJYWZA8:EuRkOY/Y
+	0x0160:  6671 3062 6b56 5852 7155 7263 5863 4a6d  fq0bkVXRqUrcXcJm
+	0x0170:  7355 773d 0d0a 436f 6e74 656e 742d 5479  sUw=..Content-Ty
+	0x0180:  7065 3a20 6170 706c 6963 6174 696f 6e2f  pe:.application/
+	0x0190:  6f63 7465 742d 7374 7265 616d 0d0a 4461  octet-stream..Da
+	0x01a0:  7465 3a20 5468 752c 2032 3320 4175 6720  te:.Thu,.23.Aug.
+	0x01b0:  3230 3138 2030 393a 3535 3a35 3820 474d  2018.09:55:58.GM
+	0x01c0:  540d 0a78 2d61 6d7a 2d61 636c 3a20 7072  T..x-amz-acl:.pr
+	0x01d0:  6976 6174 650d 0a78 2d61 6d7a 2d73 746f  ivate..x-amz-sto
+	0x01e0:  7261 6765 2d63 6c61 7373 3a20 5354 414e  rage-class:.STAN
+	0x01f0:  4441 5244 0d0a 4163 6365 7074 2d45 6e63  DARD..Accept-Enc
+	0x0200:  6f64 696e 673a 2067 7a69 700d 0a0d 0a0e  oding:.gzip.....
+	0x0210:  ff81 0101 02ff 8200 0106 0110 0000 2cff  ..............,.
+	0x0220:  8200 08fc fe77 c5f2 fc49 80d5 6afc fd4e  .....w...I..j..N
+	0x0230:  4d82 fc82 abf9 affc 9856 f038 fc75 8f43  M........V.8.u.C
+	0x0240:  e1fc e0db 100b fc3d 41b3 d00f ff83 0101  .......=A.......
+	0x0250:  02ff 8400 0106 01ff 8000 0050 ff84 0040  ...........P...@
+	0x0260:  ffa7 ffe0 ffcf ffe4 4cff ceff e44c fffe  ........L....L..
+	0x0270:  4bff f247 0000 00ff ffff ff15 ffad ff91  K..G............
+	0x0280:  3400 0e00 0000 0000 0000 0000 0000 0000  4...............
+	0x0290:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x02a0:  0000 0000 0000 0000 0000 0000 0304 0032  ...............2
+	0x02b0:  0506 00fe 03d9 0306 0005                 ..........
+17:55:58.811706 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 8679:9026, ack 14405, win 562, options [nop,nop,TS val 91438045 ecr 3126966753], length 347: HTTP: GET /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fstartedat HTTP/1.1
+	0x0000:  4500 018f 6fb9 4000 3f06 ad0a c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 f0f3 42c5 7f78  ...@...P....B..x
+	0x0020:  8018 0232 1f27 0000 0101 080a 0573 3bdd  ...2.'.......s;.
+	0x0030:  ba61 b9e1 4745 5420 2f64 6f63 6b65 7225  .a..GET./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 7374 6172 7465 6461 7420 4854  0%2Fstartedat.HT
+	0x00b0:  5450 2f31 2e31 0d0a 486f 7374 3a20 646f  TP/1.1..Host:.do
+	0x00c0:  636b 6572 2d74 6573 7431 2e6f 6273 2e63  cker-test1.obs.c
+	0x00d0:  6e2d 736f 7574 682d 312e 6d79 6877 636c  n-south-1.myhwcl
+	0x00e0:  6f75 6473 2e63 6f6d 3a38 300d 0a55 7365  ouds.com:80..Use
+	0x00f0:  722d 4167 656e 743a 206f 6273 2d73 646b  r-Agent:.obs-sdk
+	0x0100:  2d67 6f2f 322e 322e 310d 0a41 7574 686f  -go/2.2.1..Autho
+	0x0110:  7269 7a61 7469 6f6e 3a20 4157 5320 484a  rization:.AWS.HJ
+	0x0120:  564a 5236 5959 324f 5951 3446 4a59 575a  VJR6YY2OYQ4FJYWZ
+	0x0130:  4138 3a36 4c39 6342 7753 7274 4f78 7542  A8:6L9cBwSrtOxuB
+	0x0140:  3142 544d 714b 504f 6b4c 6c59 7051 3d0d  1BTMqKPOkLlYpQ=.
+	0x0150:  0a44 6174 653a 2054 6875 2c20 3233 2041  .Date:.Thu,.23.A
+	0x0160:  7567 2032 3031 3820 3039 3a35 353a 3538  ug.2018.09:55:58
+	0x0170:  2047 4d54 0d0a 4163 6365 7074 2d45 6e63  .GMT..Accept-Enc
+	0x0180:  6f64 696e 673a 2067 7a69 700d 0a0d 0a    oding:.gzip....
+17:55:58.816542 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 9026:9384, ack 14963, win 582, options [nop,nop,TS val 91438049 ecr 3126966775], length 358: HTTP: GET /?prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fdata&uploads HTTP/1.1
+	0x0000:  4500 019a 6fba 4000 3f06 acfe c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 f24e 42c5 81a6  ...@...P...NB...
+	0x0020:  8018 0246 1f32 0000 0101 080a 0573 3be1  ...F.2.......s;.
+	0x0030:  ba61 b9f7 4745 5420 2f3f 7072 6566 6978  .a..GET./?prefix
+	0x0040:  3d64 6f63 6b65 7225 3246 7265 6769 7374  =docker%2Fregist
+	0x0050:  7279 2532 4676 3225 3246 7265 706f 7369  ry%2Fv2%2Freposi
+	0x0060:  746f 7269 6573 2532 466c 6962 7261 7279  tories%2Flibrary
+	0x0070:  2532 4674 656d 7025 3246 5f75 706c 6f61  %2Ftemp%2F_uploa
+	0x0080:  6473 2532 4635 6432 6364 3738 392d 6431  ds%2F5d2cd789-d1
+	0x0090:  3739 2d34 6436 612d 3864 6331 2d30 3030  79-4d6a-8dc1-000
+	0x00a0:  3566 3631 3637 3831 3025 3246 6461 7461  5f6167810%2Fdata
+	0x00b0:  2675 706c 6f61 6473 2048 5454 502f 312e  &uploads.HTTP/1.
+	0x00c0:  310d 0a48 6f73 743a 2064 6f63 6b65 722d  1..Host:.docker-
+	0x00d0:  7465 7374 312e 6f62 732e 636e 2d73 6f75  test1.obs.cn-sou
+	0x00e0:  7468 2d31 2e6d 7968 7763 6c6f 7564 732e  th-1.myhwclouds.
+	0x00f0:  636f 6d3a 3830 0d0a 5573 6572 2d41 6765  com:80..User-Age
+	0x0100:  6e74 3a20 6f62 732d 7364 6b2d 676f 2f32  nt:.obs-sdk-go/2
+	0x0110:  2e32 2e31 0d0a 4175 7468 6f72 697a 6174  .2.1..Authorizat
+	0x0120:  696f 6e3a 2041 5753 2048 4a56 4a52 3659  ion:.AWS.HJVJR6Y
+	0x0130:  5932 4f59 5134 464a 5957 5a41 383a 754e  Y2OYQ4FJYWZA8:uN
+	0x0140:  4833 4b7a 3856 4578 6e36 4a4e 7467 4f63  H3Kz8VExn6JNtgOc
+	0x0150:  7a39 5553 7049 7076 553d 0d0a 4461 7465  z9USpIpvU=..Date
+	0x0160:  3a20 5468 752c 2032 3320 4175 6720 3230  :.Thu,.23.Aug.20
+	0x0170:  3138 2030 393a 3535 3a35 3820 474d 540d  18.09:55:58.GMT.
+	0x0180:  0a41 6363 6570 742d 456e 636f 6469 6e67  .Accept-Encoding
+	0x0190:  3a20 677a 6970 0d0a 0d0a                 :.gzip....
+17:55:58.822259 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 9384:9768, ack 16265, win 602, options [nop,nop,TS val 91438055 ecr 3126966781], length 384: HTTP: GET /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fdata?uploadId=00000165663649C9900BD719BBD03628 HTTP/1.1
+	0x0000:  4500 01b4 6fbb 4000 3f06 ace3 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 f3b4 42c5 86bc  ...@...P....B...
+	0x0020:  8018 025a 1f4c 0000 0101 080a 0573 3be7  ...Z.L.......s;.
+	0x0030:  ba61 b9fd 4745 5420 2f64 6f63 6b65 7225  .a..GET./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 6461 7461 3f75 706c 6f61 6449  0%2Fdata?uploadI
+	0x00b0:  643d 3030 3030 3031 3635 3636 3336 3439  d=00000165663649
+	0x00c0:  4339 3930 3042 4437 3139 4242 4430 3336  C9900BD719BBD036
+	0x00d0:  3238 2048 5454 502f 312e 310d 0a48 6f73  28.HTTP/1.1..Hos
+	0x00e0:  743a 2064 6f63 6b65 722d 7465 7374 312e  t:.docker-test1.
+	0x00f0:  6f62 732e 636e 2d73 6f75 7468 2d31 2e6d  obs.cn-south-1.m
+	0x0100:  7968 7763 6c6f 7564 732e 636f 6d3a 3830  yhwclouds.com:80
+	0x0110:  0d0a 5573 6572 2d41 6765 6e74 3a20 6f62  ..User-Agent:.ob
+	0x0120:  732d 7364 6b2d 676f 2f32 2e32 2e31 0d0a  s-sdk-go/2.2.1..
+	0x0130:  4175 7468 6f72 697a 6174 696f 6e3a 2041  Authorization:.A
+	0x0140:  5753 2048 4a56 4a52 3659 5932 4f59 5134  WS.HJVJR6YY2OYQ4
+	0x0150:  464a 5957 5a41 383a 4679 5675 4233 3558  FJYWZA8:FyVuB35X
+	0x0160:  6b47 6446 306a 4538 5847 346e 536d 3838  kGdF0jE8XG4nSm88
+	0x0170:  6233 6f3d 0d0a 4461 7465 3a20 5468 752c  b3o=..Date:.Thu,
+	0x0180:  2032 3320 4175 6720 3230 3138 2030 393a  .23.Aug.2018.09:
+	0x0190:  3535 3a35 3820 474d 540d 0a41 6363 6570  55:58.GMT..Accep
+	0x01a0:  742d 456e 636f 6469 6e67 3a20 677a 6970  t-Encoding:.gzip
+	0x01b0:  0d0a 0d0a                                ....
+17:55:58.828289 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 9768:10311, ack 17525, win 623, options [nop,nop,TS val 91438061 ecr 3126966787], length 543: HTTP: POST /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fdata?uploadId=00000165663649C9900BD719BBD03628 HTTP/1.1
+	0x0000:  4500 0253 6fbc 4000 3f06 ac43 c0a8 011d  E..So.@.?..C....
+	0x0010:  8b9f d040 80bc 0050 b8b8 f534 42c5 8ba8  ...@...P...4B...
+	0x0020:  8018 026f 1feb 0000 0101 080a 0573 3bed  ...o.........s;.
+	0x0030:  ba61 ba03 504f 5354 202f 646f 636b 6572  .a..POST./docker
+	0x0040:  2532 4672 6567 6973 7472 7925 3246 7632  %2Fregistry%2Fv2
+	0x0050:  2532 4672 6570 6f73 6974 6f72 6965 7325  %2Frepositories%
+	0x0060:  3246 6c69 6272 6172 7925 3246 7465 6d70  2Flibrary%2Ftemp
+	0x0070:  2532 465f 7570 6c6f 6164 7325 3246 3564  %2F_uploads%2F5d
+	0x0080:  3263 6437 3839 2d64 3137 392d 3464 3661  2cd789-d179-4d6a
+	0x0090:  2d38 6463 312d 3030 3035 6636 3136 3738  -8dc1-0005f61678
+	0x00a0:  3130 2532 4664 6174 613f 7570 6c6f 6164  10%2Fdata?upload
+	0x00b0:  4964 3d30 3030 3030 3136 3536 3633 3634  Id=0000016566364
+	0x00c0:  3943 3939 3030 4244 3731 3942 4244 3033  9C9900BD719BBD03
+	0x00d0:  3632 3820 4854 5450 2f31 2e31 0d0a 486f  628.HTTP/1.1..Ho
+	0x00e0:  7374 3a20 646f 636b 6572 2d74 6573 7431  st:.docker-test1
+	0x00f0:  2e6f 6273 2e63 6e2d 736f 7574 682d 312e  .obs.cn-south-1.
+	0x0100:  6d79 6877 636c 6f75 6473 2e63 6f6d 3a38  myhwclouds.com:8
+	0x0110:  300d 0a55 7365 722d 4167 656e 743a 206f  0..User-Agent:.o
+	0x0120:  6273 2d73 646b 2d67 6f2f 322e 322e 310d  bs-sdk-go/2.2.1.
+	0x0130:  0a43 6f6e 7465 6e74 2d4c 656e 6774 683a  .Content-Length:
+	0x0140:  2031 3337 0d0a 4175 7468 6f72 697a 6174  .137..Authorizat
+	0x0150:  696f 6e3a 2041 5753 2048 4a56 4a52 3659  ion:.AWS.HJVJR6Y
+	0x0160:  5932 4f59 5134 464a 5957 5a41 383a 4659  Y2OYQ4FJYWZA8:FY
+	0x0170:  456f 5a63 7535 5862 365a 4848 3134 3175  EoZcu5Xb6ZHH141u
+	0x0180:  6951 2f54 3572 4342 343d 0d0a 4461 7465  iQ/T5rCB4=..Date
+	0x0190:  3a20 5468 752c 2032 3320 4175 6720 3230  :.Thu,.23.Aug.20
+	0x01a0:  3138 2030 393a 3535 3a35 3820 474d 540d  18.09:55:58.GMT.
+	0x01b0:  0a41 6363 6570 742d 456e 636f 6469 6e67  .Accept-Encoding
+	0x01c0:  3a20 677a 6970 0d0a 0d0a 3c43 6f6d 706c  :.gzip....<Compl
+	0x01d0:  6574 654d 756c 7469 7061 7274 5570 6c6f  eteMultipartUplo
+	0x01e0:  6164 3e3c 5061 7274 3e3c 5061 7274 4e75  ad><Part><PartNu
+	0x01f0:  6d62 6572 3e31 3c2f 5061 7274 4e75 6d62  mber>1</PartNumb
+	0x0200:  6572 3e3c 4554 6167 3e22 6138 3562 3135  er><ETag>"a85b15
+	0x0210:  3234 3866 3330 3165 3836 3066 3437 6265  248f301e860f47be
+	0x0220:  3232 3438 3135 3766 3965 223c 2f45 5461  2248157f9e"</ETa
+	0x0230:  673e 3c2f 5061 7274 3e3c 2f43 6f6d 706c  g></Part></Compl
+	0x0240:  6574 654d 756c 7469 7061 7274 5570 6c6f  eteMultipartUplo
+	0x0250:  6164 3e                                  ad>
+17:55:58.843166 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 10311:10941, ack 18452, win 643, options [nop,nop,TS val 91438076 ecr 3126966802], length 630: HTTP: PUT /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fhashstates%2Fsha256%2F0 HTTP/1.1
+	0x0000:  4500 02aa 6fbd 4000 3f06 abeb c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 f753 42c5 8f47  ...@...P...SB..G
+	0x0020:  8018 0283 2042 0000 0101 080a 0573 3bfc  .....B.......s;.
+	0x0030:  ba61 ba12 5055 5420 2f64 6f63 6b65 7225  .a..PUT./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 6861 7368 7374 6174 6573 2532  0%2Fhashstates%2
+	0x00b0:  4673 6861 3235 3625 3246 3020 4854 5450  Fsha256%2F0.HTTP
+	0x00c0:  2f31 2e31 0d0a 486f 7374 3a20 646f 636b  /1.1..Host:.dock
+	0x00d0:  6572 2d74 6573 7431 2e6f 6273 2e63 6e2d  er-test1.obs.cn-
+	0x00e0:  736f 7574 682d 312e 6d79 6877 636c 6f75  south-1.myhwclou
+	0x00f0:  6473 2e63 6f6d 3a38 300d 0a55 7365 722d  ds.com:80..User-
+	0x0100:  4167 656e 743a 206f 6273 2d73 646b 2d67  Agent:.obs-sdk-g
+	0x0110:  6f2f 322e 322e 310d 0a43 6f6e 7465 6e74  o/2.2.1..Content
+	0x0120:  2d4c 656e 6774 683a 2031 3537 0d0a 4175  -Length:.157..Au
+	0x0130:  7468 6f72 697a 6174 696f 6e3a 2041 5753  thorization:.AWS
+	0x0140:  2048 4a56 4a52 3659 5932 4f59 5134 464a  .HJVJR6YY2OYQ4FJ
+	0x0150:  5957 5a41 383a 4f5a 636a 6c48 4d61 6c6c  YWZA8:OZcjlHMall
+	0x0160:  4a65 4155 4474 6641 4d47 5771 7232 2f59  JeAUDtfAMGWqr2/Y
+	0x0170:  593d 0d0a 436f 6e74 656e 742d 5479 7065  Y=..Content-Type
+	0x0180:  3a20 6170 706c 6963 6174 696f 6e2f 6f63  :.application/oc
+	0x0190:  7465 742d 7374 7265 616d 0d0a 4461 7465  tet-stream..Date
+	0x01a0:  3a20 5468 752c 2032 3320 4175 6720 3230  :.Thu,.23.Aug.20
+	0x01b0:  3138 2030 393a 3535 3a35 3820 474d 540d  18.09:55:58.GMT.
+	0x01c0:  0a78 2d61 6d7a 2d61 636c 3a20 7072 6976  .x-amz-acl:.priv
+	0x01d0:  6174 650d 0a78 2d61 6d7a 2d73 746f 7261  ate..x-amz-stora
+	0x01e0:  6765 2d63 6c61 7373 3a20 5354 414e 4441  ge-class:.STANDA
+	0x01f0:  5244 0d0a 4163 6365 7074 2d45 6e63 6f64  RD..Accept-Encod
+	0x0200:  696e 673a 2067 7a69 700d 0a0d 0a0e ff81  ing:.gzip.......
+	0x0210:  0101 02ff 8200 0106 0110 0000 2cff 8200  ............,...
+	0x0220:  08fc 6a09 e667 fcbb 67ae 85fc 3c6e f372  ..j..g..g...<n.r
+	0x0230:  fca5 4ff5 3afc 510e 527f fc9b 0568 8cfc  ..O.:.Q.R....h..
+	0x0240:  1f83 d9ab fc5b e0cd 190f ff83 0101 02ff  .....[..........
+	0x0250:  8400 0106 01ff 8000 0044 ff84 0040 0000  .........D...@..
+	0x0260:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0270:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0280:  0000 0000 0000 0000 0000 0000 0000 0000  ................
+	0x0290:  0000 0000 0000 0000 0000 0000 0000 0304  ................
+	0x02a0:  0000 0306 0000 0306 0005                 ..........
+17:55:58.859929 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 10941:11302, ack 18881, win 663, options [nop,nop,TS val 91438093 ecr 3126966819], length 361: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fdata HTTP/1.1
+	0x0000:  4500 019d 6fbe 4000 3f06 acf7 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 f9c9 42c5 90f4  ...@...P....B...
+	0x0020:  8018 0297 1f35 0000 0101 080a 0573 3c0d  .....5.......s<.
+	0x0030:  ba61 ba23 4745 5420 2f3f 6d61 782d 6b65  .a.#GET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4672 6570 6f73 6974 6f72 6965  v2%2Frepositorie
+	0x0070:  7325 3246 6c69 6272 6172 7925 3246 7465  s%2Flibrary%2Fte
+	0x0080:  6d70 2532 465f 7570 6c6f 6164 7325 3246  mp%2F_uploads%2F
+	0x0090:  3564 3263 6437 3839 2d64 3137 392d 3464  5d2cd789-d179-4d
+	0x00a0:  3661 2d38 6463 312d 3030 3035 6636 3136  6a-8dc1-0005f616
+	0x00b0:  3738 3130 2532 4664 6174 6120 4854 5450  7810%2Fdata.HTTP
+	0x00c0:  2f31 2e31 0d0a 486f 7374 3a20 646f 636b  /1.1..Host:.dock
+	0x00d0:  6572 2d74 6573 7431 2e6f 6273 2e63 6e2d  er-test1.obs.cn-
+	0x00e0:  736f 7574 682d 312e 6d79 6877 636c 6f75  south-1.myhwclou
+	0x00f0:  6473 2e63 6f6d 3a38 300d 0a55 7365 722d  ds.com:80..User-
+	0x0100:  4167 656e 743a 206f 6273 2d73 646b 2d67  Agent:.obs-sdk-g
+	0x0110:  6f2f 322e 322e 310d 0a41 7574 686f 7269  o/2.2.1..Authori
+	0x0120:  7a61 7469 6f6e 3a20 4157 5320 484a 564a  zation:.AWS.HJVJ
+	0x0130:  5236 5959 324f 5951 3446 4a59 575a 4138  R6YY2OYQ4FJYWZA8
+	0x0140:  3a48 6773 6a30 3471 4c53 4a4e 5372 504f  :Hgsj04qLSJNSrPO
+	0x0150:  367a 474f 6e6e 6c6b 5a64 7a45 3d0d 0a44  6zGOnnlkZdzE=..D
+	0x0160:  6174 653a 2054 6875 2c20 3233 2041 7567  ate:.Thu,.23.Aug
+	0x0170:  2032 3031 3820 3039 3a35 353a 3538 2047  .2018.09:55:58.G
+	0x0180:  4d54 0d0a 4163 6365 7074 2d45 6e63 6f64  MT..Accept-Encod
+	0x0190:  696e 673a 2067 7a69 700d 0a0d 0a         ing:.gzip....
+17:55:58.865718 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 11302:11698, ack 20007, win 684, options [nop,nop,TS val 91438099 ecr 3126966825], length 396: HTTP: GET /?delimiter=%2F&max-keys=1000&prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fhashstates%2Fsha256%2F HTTP/1.1
+	0x0000:  4500 01c0 6fbf 4000 3f06 acd3 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 fb32 42c5 955a  ...@...P...2B..Z
+	0x0020:  8018 02ac 1f58 0000 0101 080a 0573 3c13  .....X.......s<.
+	0x0030:  ba61 ba29 4745 5420 2f3f 6465 6c69 6d69  .a.)GET./?delimi
+	0x0040:  7465 723d 2532 4626 6d61 782d 6b65 7973  ter=%2F&max-keys
+	0x0050:  3d31 3030 3026 7072 6566 6978 3d64 6f63  =1000&prefix=doc
+	0x0060:  6b65 7225 3246 7265 6769 7374 7279 2532  ker%2Fregistry%2
+	0x0070:  4676 3225 3246 7265 706f 7369 746f 7269  Fv2%2Frepositori
+	0x0080:  6573 2532 466c 6962 7261 7279 2532 4674  es%2Flibrary%2Ft
+	0x0090:  656d 7025 3246 5f75 706c 6f61 6473 2532  emp%2F_uploads%2
+	0x00a0:  4635 6432 6364 3738 392d 6431 3739 2d34  F5d2cd789-d179-4
+	0x00b0:  6436 612d 3864 6331 2d30 3030 3566 3631  d6a-8dc1-0005f61
+	0x00c0:  3637 3831 3025 3246 6861 7368 7374 6174  67810%2Fhashstat
+	0x00d0:  6573 2532 4673 6861 3235 3625 3246 2048  es%2Fsha256%2F.H
+	0x00e0:  5454 502f 312e 310d 0a48 6f73 743a 2064  TTP/1.1..Host:.d
+	0x00f0:  6f63 6b65 722d 7465 7374 312e 6f62 732e  ocker-test1.obs.
+	0x0100:  636e 2d73 6f75 7468 2d31 2e6d 7968 7763  cn-south-1.myhwc
+	0x0110:  6c6f 7564 732e 636f 6d3a 3830 0d0a 5573  louds.com:80..Us
+	0x0120:  6572 2d41 6765 6e74 3a20 6f62 732d 7364  er-Agent:.obs-sd
+	0x0130:  6b2d 676f 2f32 2e32 2e31 0d0a 4175 7468  k-go/2.2.1..Auth
+	0x0140:  6f72 697a 6174 696f 6e3a 2041 5753 2048  orization:.AWS.H
+	0x0150:  4a56 4a52 3659 5932 4f59 5134 464a 5957  JVJR6YY2OYQ4FJYW
+	0x0160:  5a41 383a 4867 736a 3034 714c 534a 4e53  ZA8:Hgsj04qLSJNS
+	0x0170:  7250 4f36 7a47 4f6e 6e6c 6b5a 647a 453d  rPO6zGOnnlkZdzE=
+	0x0180:  0d0a 4461 7465 3a20 5468 752c 2032 3320  ..Date:.Thu,.23.
+	0x0190:  4175 6720 3230 3138 2030 393a 3535 3a35  Aug.2018.09:55:5
+	0x01a0:  3820 474d 540d 0a41 6363 6570 742d 456e  8.GMT..Accept-En
+	0x01b0:  636f 6469 6e67 3a20 677a 6970 0d0a 0d0a  coding:.gzip....
+17:55:58.870965 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 21580, win 706, options [nop,nop,TS val 91438104 ecr 3126966830], length 0
+	0x0000:  4500 0034 6fc0 4000 3f06 ae5e c0a8 011d  E..4o.@.?..^....
+	0x0010:  8b9f d040 80bc 0050 b8b8 fcbe 42c5 9b7f  ...@...P....B...
+	0x0020:  8010 02c2 1dcc 0000 0101 080a 0573 3c18  .............s<.
+	0x0030:  ba61 ba2e                                .a..
+17:55:58.871200 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 11698:12061, ack 21580, win 706, options [nop,nop,TS val 91438104 ecr 3126966830], length 363: HTTP: GET /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810%2Fhashstates%2Fsha256%2F985 HTTP/1.1
+	0x0000:  4500 019f 6fc1 4000 3f06 acf2 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 fcbe 42c5 9b7f  ...@...P....B...
+	0x0020:  8018 02c2 1f37 0000 0101 080a 0573 3c18  .....7.......s<.
+	0x0030:  ba61 ba2e 4745 5420 2f64 6f63 6b65 7225  .a..GET./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f75 706c 6f61 6473 2532 4635 6432  2F_uploads%2F5d2
+	0x0080:  6364 3738 392d 6431 3739 2d34 6436 612d  cd789-d179-4d6a-
+	0x0090:  3864 6331 2d30 3030 3566 3631 3637 3831  8dc1-0005f616781
+	0x00a0:  3025 3246 6861 7368 7374 6174 6573 2532  0%2Fhashstates%2
+	0x00b0:  4673 6861 3235 3625 3246 3938 3520 4854  Fsha256%2F985.HT
+	0x00c0:  5450 2f31 2e31 0d0a 486f 7374 3a20 646f  TP/1.1..Host:.do
+	0x00d0:  636b 6572 2d74 6573 7431 2e6f 6273 2e63  cker-test1.obs.c
+	0x00e0:  6e2d 736f 7574 682d 312e 6d79 6877 636c  n-south-1.myhwcl
+	0x00f0:  6f75 6473 2e63 6f6d 3a38 300d 0a55 7365  ouds.com:80..Use
+	0x0100:  722d 4167 656e 743a 206f 6273 2d73 646b  r-Agent:.obs-sdk
+	0x0110:  2d67 6f2f 322e 322e 310d 0a41 7574 686f  -go/2.2.1..Autho
+	0x0120:  7269 7a61 7469 6f6e 3a20 4157 5320 484a  rization:.AWS.HJ
+	0x0130:  564a 5236 5959 324f 5951 3446 4a59 575a  VJR6YY2OYQ4FJYWZ
+	0x0140:  4138 3a75 4e4f 794c 4d54 3941 3947 5272  A8:uNOyLMT9A9GRr
+	0x0150:  7a52 4374 4257 6e62 7051 6e4c 4d4d 3d0d  zRCtBWnbpQnLMM=.
+	0x0160:  0a44 6174 653a 2054 6875 2c20 3233 2041  .Date:.Thu,.23.A
+	0x0170:  7567 2032 3031 3820 3039 3a35 353a 3538  ug.2018.09:55:58
+	0x0180:  2047 4d54 0d0a 4163 6365 7074 2d45 6e63  .GMT..Accept-Enc
+	0x0190:  6f64 696e 673a 2067 7a69 700d 0a0d 0a    oding:.gzip....
+17:55:58.875459 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 12061:12429, ack 22290, win 729, options [nop,nop,TS val 91438108 ecr 3126966834], length 368: HTTP: GET /?max-keys=1&prefix=docker%2Fregistry%2Fv2%2Fblobs%2Fsha256%2F9d%2F9db2ca6ccae029dd195e331f4bede3d2ea2e67e0de29d6a0f8c1572e70f32fa7%2Fdata HTTP/1.1
+	0x0000:  4500 01a4 6fc2 4000 3f06 acec c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b8 fe29 42c5 9e45  ...@...P...)B..E
+	0x0020:  8018 02d9 1f3c 0000 0101 080a 0573 3c1c  .....<.......s<.
+	0x0030:  ba61 ba32 4745 5420 2f3f 6d61 782d 6b65  .a.2GET./?max-ke
+	0x0040:  7973 3d31 2670 7265 6669 783d 646f 636b  ys=1&prefix=dock
+	0x0050:  6572 2532 4672 6567 6973 7472 7925 3246  er%2Fregistry%2F
+	0x0060:  7632 2532 4662 6c6f 6273 2532 4673 6861  v2%2Fblobs%2Fsha
+	0x0070:  3235 3625 3246 3964 2532 4639 6462 3263  256%2F9d%2F9db2c
+	0x0080:  6136 6363 6165 3032 3964 6431 3935 6533  a6ccae029dd195e3
+	0x0090:  3331 6634 6265 6465 3364 3265 6132 6536  31f4bede3d2ea2e6
+	0x00a0:  3765 3064 6532 3964 3661 3066 3863 3135  7e0de29d6a0f8c15
+	0x00b0:  3732 6537 3066 3332 6661 3725 3246 6461  72e70f32fa7%2Fda
+	0x00c0:  7461 2048 5454 502f 312e 310d 0a48 6f73  ta.HTTP/1.1..Hos
+	0x00d0:  743a 2064 6f63 6b65 722d 7465 7374 312e  t:.docker-test1.
+	0x00e0:  6f62 732e 636e 2d73 6f75 7468 2d31 2e6d  obs.cn-south-1.m
+	0x00f0:  7968 7763 6c6f 7564 732e 636f 6d3a 3830  yhwclouds.com:80
+	0x0100:  0d0a 5573 6572 2d41 6765 6e74 3a20 6f62  ..User-Agent:.ob
+	0x0110:  732d 7364 6b2d 676f 2f32 2e32 2e31 0d0a  s-sdk-go/2.2.1..
+	0x0120:  4175 7468 6f72 697a 6174 696f 6e3a 2041  Authorization:.A
+	0x0130:  5753 2048 4a56 4a52 3659 5932 4f59 5134  WS.HJVJR6YY2OYQ4
+	0x0140:  464a 5957 5a41 383a 4867 736a 3034 714c  FJYWZA8:Hgsj04qL
+	0x0150:  534a 4e53 7250 4f36 7a47 4f6e 6e6c 6b5a  SJNSrPO6zGOnnlkZ
+	0x0160:  647a 453d 0d0a 4461 7465 3a20 5468 752c  dzE=..Date:.Thu,
+	0x0170:  2032 3320 4175 6720 3230 3138 2030 393a  .23.Aug.2018.09:
+	0x0180:  3535 3a35 3820 474d 540d 0a41 6363 6570  55:58.GMT..Accep
+	0x0190:  742d 456e 636f 6469 6e67 3a20 677a 6970  t-Encoding:.gzip
+	0x01a0:  0d0a 0d0a                                ....
+17:55:58.880554 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 12429:12989, ack 23432, win 752, options [nop,nop,TS val 91438113 ecr 3126966839], length 560: HTTP: PUT /docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_layers%2Fsha256%2F9db2ca6ccae029dd195e331f4bede3d2ea2e67e0de29d6a0f8c1572e70f32fa7%2Flink HTTP/1.1
+	0x0000:  4500 0264 6fc3 4000 3f06 ac2b c0a8 011d  E..do.@.?..+....
+	0x0010:  8b9f d040 80bc 0050 b8b8 ff99 42c5 a2bb  ...@...P....B...
+	0x0020:  8018 02f0 1ffc 0000 0101 080a 0573 3c21  .............s<!
+	0x0030:  ba61 ba37 5055 5420 2f64 6f63 6b65 7225  .a.7PUT./docker%
+	0x0040:  3246 7265 6769 7374 7279 2532 4676 3225  2Fregistry%2Fv2%
+	0x0050:  3246 7265 706f 7369 746f 7269 6573 2532  2Frepositories%2
+	0x0060:  466c 6962 7261 7279 2532 4674 656d 7025  Flibrary%2Ftemp%
+	0x0070:  3246 5f6c 6179 6572 7325 3246 7368 6132  2F_layers%2Fsha2
+	0x0080:  3536 2532 4639 6462 3263 6136 6363 6165  56%2F9db2ca6ccae
+	0x0090:  3032 3964 6431 3935 6533 3331 6634 6265  029dd195e331f4be
+	0x00a0:  6465 3364 3265 6132 6536 3765 3064 6532  de3d2ea2e67e0de2
+	0x00b0:  3964 3661 3066 3863 3135 3732 6537 3066  9d6a0f8c1572e70f
+	0x00c0:  3332 6661 3725 3246 6c69 6e6b 2048 5454  32fa7%2Flink.HTT
+	0x00d0:  502f 312e 310d 0a48 6f73 743a 2064 6f63  P/1.1..Host:.doc
+	0x00e0:  6b65 722d 7465 7374 312e 6f62 732e 636e  ker-test1.obs.cn
+	0x00f0:  2d73 6f75 7468 2d31 2e6d 7968 7763 6c6f  -south-1.myhwclo
+	0x0100:  7564 732e 636f 6d3a 3830 0d0a 5573 6572  uds.com:80..User
+	0x0110:  2d41 6765 6e74 3a20 6f62 732d 7364 6b2d  -Agent:.obs-sdk-
+	0x0120:  676f 2f32 2e32 2e31 0d0a 436f 6e74 656e  go/2.2.1..Conten
+	0x0130:  742d 4c65 6e67 7468 3a20 3731 0d0a 4175  t-Length:.71..Au
+	0x0140:  7468 6f72 697a 6174 696f 6e3a 2041 5753  thorization:.AWS
+	0x0150:  2048 4a56 4a52 3659 5932 4f59 5134 464a  .HJVJR6YY2OYQ4FJ
+	0x0160:  5957 5a41 383a 595a 7764 6d39 704f 7144  YWZA8:YZwdm9pOqD
+	0x0170:  3663 3564 6b77 4953 6971 4c55 7471 357a  6c5dkwISiqLUtq5z
+	0x0180:  633d 0d0a 436f 6e74 656e 742d 5479 7065  c=..Content-Type
+	0x0190:  3a20 6170 706c 6963 6174 696f 6e2f 6f63  :.application/oc
+	0x01a0:  7465 742d 7374 7265 616d 0d0a 4461 7465  tet-stream..Date
+	0x01b0:  3a20 5468 752c 2032 3320 4175 6720 3230  :.Thu,.23.Aug.20
+	0x01c0:  3138 2030 393a 3535 3a35 3820 474d 540d  18.09:55:58.GMT.
+	0x01d0:  0a78 2d61 6d7a 2d61 636c 3a20 7072 6976  .x-amz-acl:.priv
+	0x01e0:  6174 650d 0a78 2d61 6d7a 2d73 746f 7261  ate..x-amz-stora
+	0x01f0:  6765 2d63 6c61 7373 3a20 5354 414e 4441  ge-class:.STANDA
+	0x0200:  5244 0d0a 4163 6365 7074 2d45 6e63 6f64  RD..Accept-Encod
+	0x0210:  696e 673a 2067 7a69 700d 0a0d 0a73 6861  ing:.gzip....sha
+	0x0220:  3235 363a 3964 6232 6361 3663 6361 6530  256:9db2ca6ccae0
+	0x0230:  3239 6464 3139 3565 3333 3166 3462 6564  29dd195e331f4bed
+	0x0240:  6533 6432 6561 3265 3637 6530 6465 3239  e3d2ea2e67e0de29
+	0x0250:  6436 6130 6638 6331 3537 3265 3730 6633  d6a0f8c1572e70f3
+	0x0260:  3266 6137                                2fa7
+17:55:58.896999 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 12989:13332, ack 23861, win 774, options [nop,nop,TS val 91438130 ecr 3126966856], length 343: HTTP: GET /?prefix=docker%2Fregistry%2Fv2%2Frepositories%2Flibrary%2Ftemp%2F_uploads%2F5d2cd789-d179-4d6a-8dc1-0005f6167810 HTTP/1.1
+	0x0000:  4500 018b 6fc4 4000 3f06 ad03 c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b9 01c9 42c5 a468  ...@...P....B..h
+	0x0020:  8018 0306 1f23 0000 0101 080a 0573 3c32  .....#.......s<2
+	0x0030:  ba61 ba48 4745 5420 2f3f 7072 6566 6978  .a.HGET./?prefix
+	0x0040:  3d64 6f63 6b65 7225 3246 7265 6769 7374  =docker%2Fregist
+	0x0050:  7279 2532 4676 3225 3246 7265 706f 7369  ry%2Fv2%2Freposi
+	0x0060:  746f 7269 6573 2532 466c 6962 7261 7279  tories%2Flibrary
+	0x0070:  2532 4674 656d 7025 3246 5f75 706c 6f61  %2Ftemp%2F_uploa
+	0x0080:  6473 2532 4635 6432 6364 3738 392d 6431  ds%2F5d2cd789-d1
+	0x0090:  3739 2d34 6436 612d 3864 6331 2d30 3030  79-4d6a-8dc1-000
+	0x00a0:  3566 3631 3637 3831 3020 4854 5450 2f31  5f6167810.HTTP/1
+	0x00b0:  2e31 0d0a 486f 7374 3a20 646f 636b 6572  .1..Host:.docker
+	0x00c0:  2d74 6573 7431 2e6f 6273 2e63 6e2d 736f  -test1.obs.cn-so
+	0x00d0:  7574 682d 312e 6d79 6877 636c 6f75 6473  uth-1.myhwclouds
+	0x00e0:  2e63 6f6d 3a38 300d 0a55 7365 722d 4167  .com:80..User-Ag
+	0x00f0:  656e 743a 206f 6273 2d73 646b 2d67 6f2f  ent:.obs-sdk-go/
+	0x0100:  322e 322e 310d 0a41 7574 686f 7269 7a61  2.2.1..Authoriza
+	0x0110:  7469 6f6e 3a20 4157 5320 484a 564a 5236  tion:.AWS.HJVJR6
+	0x0120:  5959 324f 5951 3446 4a59 575a 4138 3a48  YY2OYQ4FJYWZA8:H
+	0x0130:  6773 6a30 3471 4c53 4a4e 5372 504f 367a  gsj04qLSJNSrPO6z
+	0x0140:  474f 6e6e 6c6b 5a64 7a45 3d0d 0a44 6174  GOnnlkZdzE=..Dat
+	0x0150:  653a 2054 6875 2c20 3233 2041 7567 2032  e:.Thu,.23.Aug.2
+	0x0160:  3031 3820 3039 3a35 353a 3538 2047 4d54  018.09:55:58.GMT
+	0x0170:  0d0a 4163 6365 7074 2d45 6e63 6f64 696e  ..Accept-Encodin
+	0x0180:  673a 2067 7a69 700d 0a0d 0a              g:.gzip....
+17:55:58.903784 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 26147, win 819, options [nop,nop,TS val 91438137 ecr 3126966863], length 0
+	0x0000:  4500 0034 6fc5 4000 3f06 ae59 c0a8 011d  E..4o.@.?..Y....
+	0x0010:  8b9f d040 80bc 0050 b8b9 0320 42c5 ad56  ...@...P....B..V
+	0x0020:  8010 0333 1dcc 0000 0101 080a 0573 3c39  ...3.........s<9
+	0x0030:  ba61 ba4f                                .a.O
+17:55:58.904410 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 13332:14177, ack 26147, win 819, options [nop,nop,TS val 91438137 ecr 3126966863], length 845: HTTP: POST /?delete HTTP/1.1
+	0x0000:  4500 0381 6fc6 4000 3f06 ab0b c0a8 011d  E...o.@.?.......
+	0x0010:  8b9f d040 80bc 0050 b8b9 0320 42c5 ad56  ...@...P....B..V
+	0x0020:  8018 0333 2119 0000 0101 080a 0573 3c39  ...3!........s<9
+	0x0030:  ba61 ba4f 504f 5354 202f 3f64 656c 6574  .a.OPOST./?delet
+	0x0040:  6520 4854 5450 2f31 2e31 0d0a 486f 7374  e.HTTP/1.1..Host
+	0x0050:  3a20 646f 636b 6572 2d74 6573 7431 2e6f  :.docker-test1.o
+	0x0060:  6273 2e63 6e2d 736f 7574 682d 312e 6d79  bs.cn-south-1.my
+	0x0070:  6877 636c 6f75 6473 2e63 6f6d 3a38 300d  hwclouds.com:80.
+	0x0080:  0a55 7365 722d 4167 656e 743a 206f 6273  .User-Agent:.obs
+	0x0090:  2d73 646b 2d67 6f2f 322e 322e 310d 0a43  -sdk-go/2.2.1..C
+	0x00a0:  6f6e 7465 6e74 2d4c 656e 6774 683a 2035  ontent-Length:.5
+	0x00b0:  3436 0d0a 4175 7468 6f72 697a 6174 696f  46..Authorizatio
+	0x00c0:  6e3a 2041 5753 2048 4a56 4a52 3659 5932  n:.AWS.HJVJR6YY2
+	0x00d0:  4f59 5134 464a 5957 5a41 383a 7952 7957  OYQ4FJYWZA8:yRyW
+	0x00e0:  774b 4b74 6134 3373 756a 3742 6438 5449  wKKta43suj7Bd8TI
+	0x00f0:  4550 6b48 314e 413d 0d0a 436f 6e74 656e  EPkH1NA=..Conten
+	0x0100:  742d 4d44 353a 2037 5330 3947 7233 416e  t-MD5:.7S09Gr3An
+	0x0110:  2b44 5931 7745 4453 302b 3979 773d 3d0d  +DY1wEDS0+9yw==.
+	0x0120:  0a44 6174 653a 2054 6875 2c20 3233 2041  .Date:.Thu,.23.A
+	0x0130:  7567 2032 3031 3820 3039 3a35 353a 3538  ug.2018.09:55:58
+	0x0140:  2047 4d54 0d0a 4163 6365 7074 2d45 6e63  .GMT..Accept-Enc
+	0x0150:  6f64 696e 673a 2067 7a69 700d 0a0d 0a3c  oding:.gzip....<
+	0x0160:  4465 6c65 7465 3e3c 4f62 6a65 6374 3e3c  Delete><Object><
+	0x0170:  4b65 793e 646f 636b 6572 2f72 6567 6973  Key>docker/regis
+	0x0180:  7472 792f 7632 2f72 6570 6f73 6974 6f72  try/v2/repositor
+	0x0190:  6965 732f 6c69 6272 6172 792f 7465 6d70  ies/library/temp
+	0x01a0:  2f5f 7570 6c6f 6164 732f 3564 3263 6437  /_uploads/5d2cd7
+	0x01b0:  3839 2d64 3137 392d 3464 3661 2d38 6463  89-d179-4d6a-8dc
+	0x01c0:  312d 3030 3035 6636 3136 3738 3130 2f64  1-0005f6167810/d
+	0x01d0:  6174 613c 2f4b 6579 3e3c 2f4f 626a 6563  ata</Key></Objec
+	0x01e0:  743e 3c4f 626a 6563 743e 3c4b 6579 3e64  t><Object><Key>d
+	0x01f0:  6f63 6b65 722f 7265 6769 7374 7279 2f76  ocker/registry/v
+	0x0200:  322f 7265 706f 7369 746f 7269 6573 2f6c  2/repositories/l
+	0x0210:  6962 7261 7279 2f74 656d 702f 5f75 706c  ibrary/temp/_upl
+	0x0220:  6f61 6473 2f35 6432 6364 3738 392d 6431  oads/5d2cd789-d1
+	0x0230:  3739 2d34 6436 612d 3864 6331 2d30 3030  79-4d6a-8dc1-000
+	0x0240:  3566 3631 3637 3831 302f 6861 7368 7374  5f6167810/hashst
+	0x0250:  6174 6573 2f73 6861 3235 362f 303c 2f4b  ates/sha256/0</K
+	0x0260:  6579 3e3c 2f4f 626a 6563 743e 3c4f 626a  ey></Object><Obj
+	0x0270:  6563 743e 3c4b 6579 3e64 6f63 6b65 722f  ect><Key>docker/
+	0x0280:  7265 6769 7374 7279 2f76 322f 7265 706f  registry/v2/repo
+	0x0290:  7369 746f 7269 6573 2f6c 6962 7261 7279  sitories/library
+	0x02a0:  2f74 656d 702f 5f75 706c 6f61 6473 2f35  /temp/_uploads/5
+	0x02b0:  6432 6364 3738 392d 6431 3739 2d34 6436  d2cd789-d179-4d6
+	0x02c0:  612d 3864 6331 2d30 3030 3566 3631 3637  a-8dc1-0005f6167
+	0x02d0:  3831 302f 6861 7368 7374 6174 6573 2f73  810/hashstates/s
+	0x02e0:  6861 3235 362f 3938 353c 2f4b 6579 3e3c  ha256/985</Key><
+	0x02f0:  2f4f 626a 6563 743e 3c4f 626a 6563 743e  /Object><Object>
+	0x0300:  3c4b 6579 3e64 6f63 6b65 722f 7265 6769  <Key>docker/regi
+	0x0310:  7374 7279 2f76 322f 7265 706f 7369 746f  stry/v2/reposito
+	0x0320:  7269 6573 2f6c 6962 7261 7279 2f74 656d  ries/library/tem
+	0x0330:  702f 5f75 706c 6f61 6473 2f35 6432 6364  p/_uploads/5d2cd
+	0x0340:  3738 392d 6431 3739 2d34 6436 612d 3864  789-d179-4d6a-8d
+	0x0350:  6331 2d30 3030 3566 3631 3637 3831 302f  c1-0005f6167810/
+	0x0360:  7374 6172 7465 6461 743c 2f4b 6579 3e3c  startedat</Key><
+	0x0370:  2f4f 626a 6563 743e 3c2f 4465 6c65 7465  /Object></Delete
+	0x0380:  3e                                       >
+17:55:58.958233 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 27635, win 842, options [nop,nop,TS val 91438191 ecr 3126966917], length 0
+	0x0000:  4500 0034 6fc7 4000 3f06 ae57 c0a8 011d  E..4o.@.?..W....
+	0x0010:  8b9f d040 80bc 0050 b8b9 066d 42c5 b326  ...@...P...mB..&
+	0x0020:  8010 034a 1dcc 0000 0101 080a 0573 3c6f  ...J.........s<o
+	0x0030:  ba61 ba85                                .a..
+17:55:58.999642 IP ecs-docker.novalocal.55232 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [S], seq 4055953025, win 29200, options [mss 1460,sackOK,TS val 91438233 ecr 0,nop,wscale 7], length 0
+	0x0000:  4500 003c d218 4000 4006 4afe c0a8 011d  E..<..@.@.J.....
+	0x0010:  8b9f d040 d7c0 0050 f1c0 ee81 0000 0000  ...@...P........
+	0x0020:  a002 7210 1dd4 0000 0204 05b4 0402 080a  ..r.............
+	0x0030:  0573 3c99 0000 0000 0103 0307            .s<.........
+17:55:59.001105 IP ecs-docker.novalocal.55232 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 1508983419, win 229, options [nop,nop,TS val 91438234 ecr 1481608212], length 0
+	0x0000:  4500 0034 d219 4000 4006 4b05 c0a8 011d  E..4..@.@.K.....
+	0x0010:  8b9f d040 d7c0 0050 f1c0 ee82 59f1 427b  ...@...P....Y.B{
+	0x0020:  8010 00e5 1dcc 0000 0101 080a 0573 3c9a  .............s<.
+	0x0030:  584f 8c14                                XO..
+17:55:59.001197 IP ecs-docker.novalocal.55232 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [P.], seq 0:480, ack 1, win 229, options [nop,nop,TS val 91438234 ecr 1481608212], length 480: HTTP: HEAD /docker%2Fregistry%2Fv2%2Fblobs%2Fsha256%2F9d%2F9db2ca6ccae029dd195e331f4bede3d2ea2e67e0de29d6a0f8c1572e70f32fa7%2Fdata?AWSAccessKeyId=HJVJR6YY2OYQ4FJYWZA8&Expires=7200000001535018158&Signature=SfIlzCr74WcDIiOjIPYO3Ck3Vu4%3D HTTP/1.1
+	0x0000:  4500 0214 d21a 4000 4006 4924 c0a8 011d  E.....@.@.I$....
+	0x0010:  8b9f d040 d7c0 0050 f1c0 ee82 59f1 427b  ...@...P....Y.B{
+	0x0020:  8018 00e5 1fac 0000 0101 080a 0573 3c9a  .............s<.
+	0x0030:  584f 8c14 4845 4144 202f 646f 636b 6572  XO..HEAD./docker
+	0x0040:  2532 4672 6567 6973 7472 7925 3246 7632  %2Fregistry%2Fv2
+	0x0050:  2532 4662 6c6f 6273 2532 4673 6861 3235  %2Fblobs%2Fsha25
+	0x0060:  3625 3246 3964 2532 4639 6462 3263 6136  6%2F9d%2F9db2ca6
+	0x0070:  6363 6165 3032 3964 6431 3935 6533 3331  ccae029dd195e331
+	0x0080:  6634 6265 6465 3364 3265 6132 6536 3765  f4bede3d2ea2e67e
+	0x0090:  3064 6532 3964 3661 3066 3863 3135 3732  0de29d6a0f8c1572
+	0x00a0:  6537 3066 3332 6661 3725 3246 6461 7461  e70f32fa7%2Fdata
+	0x00b0:  3f41 5753 4163 6365 7373 4b65 7949 643d  ?AWSAccessKeyId=
+	0x00c0:  484a 564a 5236 5959 324f 5951 3446 4a59  HJVJR6YY2OYQ4FJY
+	0x00d0:  575a 4138 2645 7870 6972 6573 3d37 3230  WZA8&Expires=720
+	0x00e0:  3030 3030 3030 3135 3335 3031 3831 3538  0000001535018158
+	0x00f0:  2653 6967 6e61 7475 7265 3d53 6649 6c7a  &Signature=SfIlz
+	0x0100:  4372 3734 5763 4449 694f 6a49 5059 4f33  Cr74WcDIiOjIPYO3
+	0x0110:  436b 3356 7534 2533 4420 4854 5450 2f31  Ck3Vu4%3D.HTTP/1
+	0x0120:  2e31 0d0a 486f 7374 3a20 646f 636b 6572  .1..Host:.docker
+	0x0130:  2d74 6573 7431 2e6f 6273 2e63 6e2d 736f  -test1.obs.cn-so
+	0x0140:  7574 682d 312e 6d79 6877 636c 6f75 6473  uth-1.myhwclouds
+	0x0150:  2e63 6f6d 3a38 300d 0a55 7365 722d 4167  .com:80..User-Ag
+	0x0160:  656e 743a 2064 6f63 6b65 722f 3138 2e30  ent:.docker/18.0
+	0x0170:  362e 302d 6365 2067 6f2f 676f 312e 3130  6.0-ce.go/go1.10
+	0x0180:  2e33 2067 6974 2d63 6f6d 6d69 742f 3066  .3.git-commit/0f
+	0x0190:  6661 3832 3520 6b65 726e 656c 2f33 2e31  fa825.kernel/3.1
+	0x01a0:  302e 302d 3836 322e 392e 312e 656c 372e  0.0-862.9.1.el7.
+	0x01b0:  7838 365f 3634 206f 732f 6c69 6e75 7820  x86_64.os/linux.
+	0x01c0:  6172 6368 2f61 6d64 3634 2055 7073 7472  arch/amd64.Upstr
+	0x01d0:  6561 6d43 6c69 656e 7428 446f 636b 6572  eamClient(Docker
+	0x01e0:  2d43 6c69 656e 742f 3138 2e30 362e 302d  -Client/18.06.0-
+	0x01f0:  6365 205c 286c 696e 7578 5c29 290d 0a43  ce.\(linux\))..C
+	0x0200:  6f6e 6e65 6374 696f 6e3a 2063 6c6f 7365  onnection:.close
+	0x0210:  0d0a 0d0a                                ....
+17:55:59.003189 IP ecs-docker.novalocal.55232 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 343, win 237, options [nop,nop,TS val 91438236 ecr 1481608214], length 0
+	0x0000:  4500 0034 d21b 4000 4006 4b03 c0a8 011d  E..4..@.@.K.....
+	0x0010:  8b9f d040 d7c0 0050 f1c0 f062 59f1 43d1  ...@...P...bY.C.
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 0573 3c9c  .............s<.
+	0x0030:  584f 8c16                                XO..
+17:55:59.003226 IP ecs-docker.novalocal.55232 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [F.], seq 480, ack 343, win 237, options [nop,nop,TS val 91438236 ecr 1481608214], length 0
+	0x0000:  4500 0034 d21c 4000 4006 4b02 c0a8 011d  E..4..@.@.K.....
+	0x0010:  8b9f d040 d7c0 0050 f1c0 f062 59f1 43d1  ...@...P...bY.C.
+	0x0020:  8011 00ed 1dcc 0000 0101 080a 0573 3c9c  .............s<.
+	0x0030:  584f 8c16                                XO..
+17:55:59.003237 IP ecs-docker.novalocal.55232 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 344, win 237, options [nop,nop,TS val 91438236 ecr 1481608214], length 0
+	0x0000:  4500 0034 d21d 4000 4006 4b01 c0a8 011d  E..4..@.@.K.....
+	0x0010:  8b9f d040 d7c0 0050 f1c0 f063 59f1 43d2  ...@...P...cY.C.
+	0x0020:  8010 00ed 1dcc 0000 0101 080a 0573 3c9c  .............s<.
+	0x0030:  584f 8c16                                XO..
+17:56:58.958525 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [F.], seq 14177, ack 27635, win 842, options [nop,nop,TS val 91498191 ecr 3126966917], length 0
+	0x0000:  4500 0034 6fc8 4000 3f06 ae56 c0a8 011d  E..4o.@.?..V....
+	0x0010:  8b9f d040 80bc 0050 b8b9 066d 42c5 b326  ...@...P...mB..&
+	0x0020:  8011 034a 1dcc 0000 0101 080a 0574 26cf  ...J.........t&.
+	0x0030:  ba61 ba85                                .a..
+17:56:58.961816 IP ecs-docker.novalocal.32956 > ecs-139-159-208-64.compute.hwclouds-dns.com.http: Flags [.], ack 27636, win 842, options [nop,nop,TS val 91498195 ecr 3127026921], length 0
+	0x0000:  4500 0034 6fc9 4000 3f06 ae55 c0a8 011d  E..4o.@.?..U....
+	0x0010:  8b9f d040 80bc 0050 b8b9 066e 42c5 b327  ...@...P...nB..'
+	0x0020:  8010 034a 1dcc 0000 0101 080a 0574 26d3  ...J.........t&.
+	0x0030:  ba62 a4e9                                .b..
+
+82 packets captured
+82 packets received by filter
+0 packets dropped by kernel

@@ -11,6 +11,7 @@
 // objects, but no read-after-update or list-after-write consistency.
 //
 // +build include_s3
+
 package s3
 
 import (

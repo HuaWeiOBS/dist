@@ -1,5 +1,6 @@
 //
 // +build include_s3
+
 package s3
 
 import (
