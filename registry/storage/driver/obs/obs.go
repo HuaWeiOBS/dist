@@ -40,7 +40,7 @@ const (
 	// maxChunkSize defines the maximum multipart upload chunk size allowed by OBS. (5GB)
 	maxChunkSize = 5 << 30
 
-	defaultChunkSize = 2 * minChunkSize
+	defaultChunkSize = 40*minChunkSize
 
 	// defaultMultipartCopyChunkSize defines the default chunk size for all
 	// but the last Upload Part - Copy operation of a multipart copy.
@@ -371,7 +371,6 @@ func getParameterAsInt64(parameters map[string]interface{}, name string, default
 	if rv < min || rv > max {
 		return 0, fmt.Errorf("The %s %#v parameter should be a number between %d and %d (inclusive)", name, rv, min, max)
 	}
-
 	return rv, nil
 }
 
@@ -379,8 +378,7 @@ func getParameterAsInt64(parameters map[string]interface{}, name string, default
 // Huawei Cloud credentials, region and bucketName
 func New(params DriverParameters) (*Driver, error) {
         defer obs.CloseLog()
-        obs.SyncLog() 
-
+        //obs.SyncLog() 
 	client, _ := obs.New(
 		params.AccessKey,
 		params.SecretKey,
@@ -417,7 +415,6 @@ func New(params DriverParameters) (*Driver, error) {
 		ObjectACL:                   params.ObjectACL,
 		PathStyle:                   params.PathStyle,
 	}
-
 	return &Driver{
 		baseEmbed: baseEmbed{
 			Base: base.Base{
@@ -434,11 +431,10 @@ func (d *driver) Name() string {
 
 // GetContent retrieves the content stored at "path" as a []byte.
 func (d *driver) GetContent(ctx context.Context, path string) ([]byte, error) {
-	reader, err := d.Reader(ctx, path, 0)
+        reader, err := d.Reader(ctx, path, 0)
 	if err != nil {
 		return nil, err
 	}
-
 	return ioutil.ReadAll(reader)
 }
 
@@ -457,7 +453,6 @@ func (d *driver) PutContent(ctx context.Context, path string, contents []byte) e
 		},
 		Body: bytes.NewReader(contents),
 	})
-
 	return parseError(path, err)
 }
 
@@ -488,8 +483,8 @@ func (d *driver) Writer(ctx context.Context, path string, append bool) (storaged
 	key := d.obsPath(path)
 	if !append {
 		// TODO (brianbland): cancel other uploads at this path
-		obs.InitLog("/obs_log/OBS-SDK.log", 1024*1024*100, 10, obs.LEVEL_INFO, false)
-		obs.SyncLog()
+	//	obs.InitLog("/obs_log/OBS-SDK.log", 1024*1024*100, 10, obs.LEVEL_INFO, false)
+	//	obs.SyncLog()
 		output, err := d.Client.InitiateMultipartUpload(&obs.InitiateMultipartUploadInput{
 			ObjectOperationInput: obs.ObjectOperationInput{
 				Bucket:       d.Bucket,
@@ -533,7 +528,6 @@ func (d *driver) Writer(ctx context.Context, path string, append bool) (storaged
 		}
 		return d.newWriter(key, multi.UploadId, output.Parts), nil
 	}
-
 	return nil, storagedriver.PathNotFoundError{Path: path}
 }
 
@@ -607,6 +601,7 @@ func (d *driver) List(ctx context.Context, opath string) ([]string, error) {
 		}
 
 		for _, commonPrefix := range output.CommonPrefixes {
+//                        commonPrefix := commonPrefix>Prefix
 			directories = append(directories, strings.Replace(commonPrefix[0:len(commonPrefix)-1], d.obsPath(""), prefix, 1))
 		}
 
@@ -635,7 +630,6 @@ func (d *driver) List(ctx context.Context, opath string) ([]string, error) {
 			return nil, storagedriver.PathNotFoundError{Path: opath}
 		}
 	}
-
 	return append(files, directories...), nil
 }
 
@@ -655,11 +649,10 @@ func (d *driver) copy(ctx context.Context, sourcePath string, destPath string) e
 	//
 	// For each part except the last part, file size has to be in the range of
 	//[100KB, 5GB], the last part should be at least 100KB.
-	fileInfo, err := d.Stat(ctx, sourcePath)
+        fileInfo, err := d.Stat(ctx, sourcePath)
 	if err != nil {
 		return parseError(sourcePath, err)
 	}
-
 	if fileInfo.Size() <= d.MultipartCopyThresholdSize {
 		_, err := d.Client.CopyObject(&obs.CopyObjectInput{
 			ObjectOperationInput: obs.ObjectOperationInput{
@@ -679,7 +672,6 @@ func (d *driver) copy(ctx context.Context, sourcePath string, destPath string) e
 		}
 		return nil
 	}
-
 	initOutput, err := d.Client.InitiateMultipartUpload(&obs.InitiateMultipartUploadInput{
 		ObjectOperationInput: obs.ObjectOperationInput{
 			Bucket:       d.Bucket,
@@ -693,14 +685,12 @@ func (d *driver) copy(ctx context.Context, sourcePath string, destPath string) e
 	if err != nil {
 		return err
 	}
-
 	numParts := (fileInfo.Size() + d.MultipartCopyChunkSize - 1) / d.MultipartCopyChunkSize
 	completedParts := make([]obs.Part, numParts)
 	errChan := make(chan error, numParts)
 	limiter := make(chan struct{}, d.MultipartCopyMaxConcurrency)
-
 	for i := range completedParts {
-		i := int64(i)
+	        i := int64(i)
 		go func() {
 			limiter <- struct{}{}
 			firstByte := i * d.MultipartCopyChunkSize
@@ -709,16 +699,16 @@ func (d *driver) copy(ctx context.Context, sourcePath string, destPath string) e
 				lastByte = fileInfo.Size() - 1
 			}
 
-			uploadOutput, err := d.Client.UploadPart(&obs.UploadPartInput{
+			uploadOutput, err := d.Client.CopyPart(&obs.CopyPartInput{
 				Bucket:     d.Bucket,
 				Key:        d.obsPath(destPath),
-				PartNumber: int(i + 1),
-				UploadId:   initOutput.UploadId,
-				SourceFile: d.Bucket + "/" + d.obsPath(sourcePath),
-				Offset:     firstByte,
-				PartSize:   lastByte - firstByte,
+                                UploadId:   initOutput.UploadId,
+                                PartNumber: int(i + 1),
+                                CopySourceBucket: d.Bucket,
+				CopySourceKey: d.obsPath(sourcePath),
+				CopySourceRangeStart: firstByte,
+                                CopySourceRangeEnd: lastByte,
 			})
-
 			if err == nil {
 				completedParts[i] = obs.Part{
 					ETag:       uploadOutput.ETag,
@@ -729,21 +719,18 @@ func (d *driver) copy(ctx context.Context, sourcePath string, destPath string) e
 			<-limiter
 		}()
 	}
-
 	for range completedParts {
 		err := <-errChan
 		if err != nil {
 			return err
 		}
 	}
-
 	_, err = d.Client.CompleteMultipartUpload(&obs.CompleteMultipartUploadInput{
 		Bucket:   d.Bucket,
 		Key:      d.obsPath(destPath),
 		UploadId: initOutput.UploadId,
 		Parts:    completedParts,
 	})
-
 	return err
 }
 
@@ -810,7 +797,6 @@ ListLoop:
 func (d *driver) URLFor(ctx context.Context, path string, options map[string]interface{}) (string, error) {
 	methodString := obs.HTTP_GET
 	method, ok := options["method"]
-
 	if ok {
 		methodString, ok = method.(string)
 		if !ok || (methodString != obs.HTTP_GET && methodString != obs.HTTP_HEAD) {
@@ -831,9 +817,8 @@ func (d *driver) URLFor(ctx context.Context, path string, options map[string]int
 		Method:  obs.HttpMethodType(methodString),
 		Bucket:  d.Bucket,
 		Key:     d.obsPath(path),
-		Expires: int(expiresIn) * 60,
+		Expires: int(expiresIn) * 600,
 	})
-
 	return output.SignedUrl, err
 }
 
@@ -901,11 +886,10 @@ type writer struct {
 }
 
 func (d *driver) newWriter(key string, uploadID string, parts []obs.Part) storagedriver.FileWriter {
-	var size int64
+        var size int64
 	for _, part := range parts {
 		size += part.Size
 	}
-
 	return &writer{
 		driver:   d,
 		key:      key,
@@ -1002,12 +986,13 @@ func (w *writer) Write(p []byte) (int, error) {
 			}
 		} else {
 			// Otherwise we can use the old file as the new first part
-			copyPartOutput, err := w.driver.Client.UploadPart(&obs.UploadPartInput{
-				Bucket:     w.driver.Bucket,
-				Key:        w.key,
-				PartNumber: 1,
-				UploadId:   output.UploadId,
-				SourceFile: w.driver.Bucket + "/" + w.key,
+			copyPartOutput, err := w.driver.Client.CopyPart(&obs.CopyPartInput{
+					Bucket: w.driver.Bucket,
+                                        Key: w.key,
+                                        UploadId: output.UploadId,
+                                        PartNumber: 1,
+                                        CopySourceBucket: w.driver.Bucket,
+                                        CopySourceKey: w.driver.Bucket + "/" + w.key,
 			})
 			if err != nil {
 				return 0, err
@@ -1054,7 +1039,6 @@ func (w *writer) Write(p []byte) (int, error) {
 			}
 		}
 	}
-
 	w.size += int64(n)
 	return n, nil
 }
